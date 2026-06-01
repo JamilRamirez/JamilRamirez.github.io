@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "Jamil Ramirez"
+
+  navbar:
+    left:
+    - href: index.qmd
+      text: Home
+
+    - href: publications.qmd
+      text: Publications
+
+    - href: projects.qmd
+      text: Projects
+
+    - href: blog.qmd
+      text: Blog
+
+    - href: CV.qmd
+      text: CV
+
+    - href: about.qmd
+      text: About
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual

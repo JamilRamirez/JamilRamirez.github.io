@@ -1,0 +1,24 @@
+---
+title: "About"
+---
+
+I am a Mechanical Fluids Engineer from Peru working in hydrology, hydraulics and water resources analysis.
+
+My work combines hydrological modelling, precipitation analysis, uncertainty assessment and data-driven methods to support water resources studies and environmental decision-making.
+
+This website serves as a repository for publications, research projects, technical notes and reproducible workflows related to hydrology and environmental data science.
+
+## Research Interests
+
+- Hydrology and water resources
+- Hydrological modelling
+- Hydrological frequency analysis
+- Extreme rainfall and flood analysis
+- Satellite precipitation products
+- Hydrological uncertainty
+- Environmental data science
+- Reproducible research with R and Quarto
+
+## Contact
+
+You can find my publications, projects and professional profiles through the links available on this website.

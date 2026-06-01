@@ -1,0 +1,17 @@
+---
+title: "Publications"
+---
+
+## 2026
+
+### Bias correction and statistical transfer of satellite annual maximum precipitation series in the Piura River
+
+Ingeniería del Agua.
+
+DOI: 10.4995/ia.24476
+
+### Comparative analysis of traditional models vs machine learning for daily streamflow infilling in representative Peruvian basins
+
+Tecnología y ciencias del agua.
+
+DOI: 10.24850/j-tyca-18-02-02

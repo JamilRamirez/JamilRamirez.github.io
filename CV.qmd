@@ -1,0 +1,106 @@
+---
+title: "Curriculum Vitae"
+---
+
+# Jamil Isaac Ramirez Muñoz
+
+Mechanical Fluids Engineering Graduate
+
+## Professional Profile
+
+Mechanical Fluids Engineer with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows.
+
+## Education
+
+**National University of San Marcos (UNMSM)**  
+B.Sc. in Mechanical Fluids Engineering  
+Lima, Peru  
+2022
+
+## Professional Experience
+
+### Consorcio Irrigar E.I.R.L.
+
+**Engineering Assistant**  
+December 2022 – Present
+
+- Support hydrological and hydraulic studies for water resources projects.
+- Perform hydrological analyses and hydraulic calculations.
+- Process and analyze environmental and engineering datasets.
+- Prepare technical reports and engineering documentation.
+
+### Geodata and Science S.A.C.
+
+**GIS and Database Assistant**  
+September 2021 – December 2021
+
+- Conducted field data collection and survey activities.
+- Organized, processed and systematized spatial and tabular datasets.
+- Supported GIS-based data management and reporting tasks.
+- Assisted in database development and information management.
+
+## Publications
+
+### 2026
+
+Berrocal, B. F., & Ramirez, J. I. (2026).
+
+**Bias correction and statistical transfer of satellite annual maximum precipitation series in the Piura River.**
+
+*Ingeniería del Agua.*
+
+DOI: https://doi.org/10.4995/ia.24476
+
+---
+
+Berrocal, B., & Ramirez, J. (2026).
+
+**Comparative analysis of traditional models vs machine learning for daily streamflow infilling in representative Peruvian basins.**
+
+*Tecnología y Ciencias del Agua.*
+
+DOI: https://doi.org/10.24850/j-tyca-18-02-02
+
+## Technical Skills
+
+### Programming and Data Analysis
+
+- R
+- R Markdown
+- Quarto
+- Statistical Analysis
+- Time Series Analysis
+- Machine Learning
+
+### Hydrology and Hydraulics
+
+- Hydrological Modelling
+- Frequency Analysis
+- IDF Curves
+- Flood Estimation
+- Water Resources Assessment
+- Hydrological Data Processing
+
+### GIS and Mapping
+
+- QGIS
+- ArcGIS
+- Remote Sensing Data Processing
+
+### Scientific Writing
+
+- LaTeX
+- Overleaf
+- Zotero
+- Reproducible Research Workflows
+
+## Languages
+
+- Spanish (Native)
+- English (Advanced)
+
+## Profiles
+
+- ORCID: https://orcid.org/0009-0009-3386-8571
+- GitHub: https://github.com/JamilRamirez
+- LinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/

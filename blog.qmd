@@ -1,0 +1,13 @@
+---
+title: "Technical Notes"
+---
+
+Coming soon.
+
+Planned topics:
+
+- IDF curves in R
+- GEV vs Gumbel
+- PISCO rainfall data
+- Hydrological reproducibility
+- Quarto workflows

@@ -1,0 +1,15 @@
+---
+title: "Research Projects"
+---
+
+## Malanche Catchment
+
+IDF uncertainty and peak discharge estimation.
+
+## Gap-Filling Uncertainty
+
+Impact of streamflow reconstruction methods on annual hydrological indicators.
+
+## Machine Learning Hydrology
+
+Data-driven streamflow simulation using open precipitation products.

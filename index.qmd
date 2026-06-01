@@ -1,0 +1,34 @@
+---
+title: "Home"
+---
+
+# Jamil Isaac Ramirez Muñoz
+
+Mechanical Fluids Engineering Graduate | Hydrology, Hydraulics and Water Resources
+
+I am a Mechanical Fluids Engineer from Peru working in hydrology, hydraulics and environmental data analysis. My research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and data-driven approaches for water resources applications.
+
+This website contains my publications, research projects, technical notes and reproducible workflows related to hydrology and environmental data science.
+
+## Featured Research Areas
+
+- Hydrological modelling
+- Extreme rainfall and flood analysis
+- Satellite precipitation products
+- Hydrological uncertainty
+- Environmental data science
+- Reproducible workflows in R and Quarto
+
+## Recent Projects
+
+### Uncertainty of Indirect IDF Estimation Methods
+
+Assessment of uncertainty propagation from indirect IDF methods into peak discharge estimation in ungauged coastal catchments.
+
+### Hydrological Impacts of Gap-Filled Streamflow Records
+
+Evaluation of how streamflow reconstruction methods affect annual water balance estimates and hydrological indicators.
+
+### Machine Learning for Streamflow Simulation
+
+Comparison of machine learning and traditional approaches for streamflow prediction using open precipitation datasets.
