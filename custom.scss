@@ -1,0 +1,175 @@
+/*-- scss:defaults --*/
+
+// Paleta académica elegante
+$primary:             #1b3a6b;       // azul oscuro institucional
+$secondary:           #4a6fa5;       // azul medio
+$body-bg:             #faf8f4;       // crema suave
+$body-color:          #2a2a2a;       // casi negro, más suave que #000
+$headings-color:      #1b3a6b;       // azul oscuro para títulos
+$link-color:          #2a5ca8;
+$link-hover-color:    #1b3a6b;
+
+// Tipografía serif académica
+$font-family-base:    "Georgia", "Times New Roman", serif;
+$font-family-sans-serif: "Georgia", serif;
+$headings-font-family: "Georgia", "Palatino Linotype", serif;
+$headings-font-weight: 700;
+$font-size-base:      1.05rem;
+$line-height-base:    1.85;
+
+// Bordes y radios
+$border-radius:       6px;
+$border-color:        #ddd8cf;
+
+// Navbar
+$navbar-bg:           #1b3a6b;
+$navbar-fg:           #f0ebe0;
+$navbar-hl:           #f0c040;       // acento dorado para hover
+
+/*-- scss:rules --*/
+
+// Navbar refinada
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  padding: 0.6rem 1.5rem;
+
+  .navbar-brand {
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+    color: #f0ebe0 !important;
+  }
+
+  .nav-link {
+    color: #ddd8cf !important;
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #f0c040 !important;
+    }
+  }
+}
+
+// Cuerpo general
+body {
+  background-color: #faf8f4;
+}
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+// Títulos con línea decorativa
+h1 {
+  border-bottom: 2px solid #1b3a6b;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #1b3a6b;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  color: #4a6fa5;
+  font-size: 1.15rem;
+}
+
+// Links
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-bottom-color: #2a5ca8;
+  }
+}
+
+// TOC lateral
+#TOC {
+  border-left: 3px solid #1b3a6b;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  color: #4a4a4a;
+
+  a {
+    color: #4a6fa5;
+    &:hover { color: #1b3a6b; }
+  }
+}
+
+// Cards del blog
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd8cf;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(27, 58, 107, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(27, 58, 107, 0.13);
+  }
+
+  .card-title {
+    color: #1b3a6b;
+    font-weight: 700;
+  }
+}
+
+// Bloques de código
+pre, code {
+  background-color: #f0ebe0;
+  border: 1px solid #ddd8cf;
+  border-radius: 5px;
+  font-size: 0.88rem;
+}
+
+// Blockquotes académicos
+blockquote {
+  border-left: 4px solid #4a6fa5;
+  background-color: #f0ebe0;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: #3a3a3a;
+}
+
+// Tablas
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  thead {
+    background-color: #1b3a6b;
+    color: #f0ebe0;
+    th { padding: 0.6rem 1rem; text-align: left; }
+  }
+
+  tbody {
+    tr:nth-child(even) { background-color: #f0ebe0; }
+    td { padding: 0.5rem 1rem; border-bottom: 1px solid #ddd8cf; }
+  }
+}
+
+// Footer
+.nav-footer {
+  background-color: #1b3a6b;
+  color: #ddd8cf;
+  font-size: 0.85rem;
+  padding: 1rem;
+  text-align: center;
+}

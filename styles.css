@@ -1,1 +1,17 @@
-/* css styles */
+/* Utilidades menores */
+p {
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+
+img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+/* Separador decorativo */
+hr {
+  border: none;
+  border-top: 1px solid #ddd8cf;
+  margin: 2rem 0;
+}
