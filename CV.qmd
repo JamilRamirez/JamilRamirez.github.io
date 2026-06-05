@@ -99,8 +99,13 @@ DOI: https://doi.org/10.24850/j-tyca-18-02-02
 - Spanish (Native)
 - English (Advanced)
 
-## Profiles
+## Academic Profiles
 
-- ORCID: https://orcid.org/0009-0009-3386-8571
-- GitHub: https://github.com/JamilRamirez
-- LinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/
+ORCID: 0009-0009-3386-8571
+Google Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ&hl=es
+ResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez
+
+## Professional Profiles
+
+Website: https://jamilramirez.github.io
+GitHub: https://github.com/JamilRamirez
