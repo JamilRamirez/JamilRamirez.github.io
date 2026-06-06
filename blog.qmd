@@ -2,14 +2,35 @@
 title: "Technical Notes"
 ---
 
-This section will contain technical notes, tutorials and reproducible workflows related to hydrology, water resources and environmental data science.
+This section contains technical notes, tutorials, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science.
 
-Planned topics include:
+## Tools
 
-- Intensity–Duration–Frequency (IDF) curve development in R
-- GEV and Gumbel distributions for hydrological frequency analysis
-- Working with PISCO precipitation data
-- Reproducible hydrological research using R and Quarto
-- Rainfall–runoff modelling workflows
-- Hydrological uncertainty assessment
-- Data quality control and gap-filling techniques
+### Automated IDF Report Generator in R
+
+An open-source workflow developed for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.
+
+The toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.
+
+#### Features
+
+- Frequency analysis of annual maximum precipitation
+- Design rainfall estimation for multiple return periods
+- IDF curve generation
+- Automatic PDF report creation
+- Report output in Spanish
+
+#### Download
+
+[Download IDF Toolkit (ZIP)](/downloads/IDF_Toolkit.zip)
+
+## Upcoming Notes
+
+- IDF Curves in R
+- GEV vs Gumbel
+- PISCO Precipitation Data
+- GR4J Hydrological Modelling
+- Rainfall–Runoff Analysis
+- Hydrological Uncertainty
+- Data Quality Control and Gap Filling
+```
