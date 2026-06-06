@@ -8,7 +8,7 @@ Mechanical Fluids Engineering Graduate
 
 ## Professional Profile
 
-Mechanical Fluids Engineer with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows.
+Mechanical Fluids Engineering Graduate with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows.
 
 ## Education
 
@@ -63,35 +63,28 @@ DOI: https://doi.org/10.24850/j-tyca-18-02-02
 
 ## Technical Skills
 
-### Programming and Data Analysis
+### Software
 
 - R
-- R Markdown
 - Quarto
+- QGIS
+- ArcGIS
+- HEC-HMS
+- HEC-RAS
+- Iber
+- LaTeX
+- Zotero
+
+### Technical Expertise
+
+- Hydrological Modelling
+- Hydrological Frequency Analysis
+- Flood Estimation
+- Water Resources Assessment
 - Statistical Analysis
 - Time Series Analysis
 - Machine Learning
-
-### Hydrology and Hydraulics
-
-- Hydrological Modelling
-- Frequency Analysis
-- IDF Curves
-- Flood Estimation
-- Water Resources Assessment
-- Hydrological Data Processing
-
-### GIS and Mapping
-
-- QGIS
-- ArcGIS
 - Remote Sensing Data Processing
-
-### Scientific Writing
-
-- LaTeX
-- Overleaf
-- Zotero
 - Reproducible Research Workflows
 
 ## Languages
@@ -101,11 +94,11 @@ DOI: https://doi.org/10.24850/j-tyca-18-02-02
 
 ## Academic Profiles
 
-- ORCID: 0009-0009-3386-8571
-- Google Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ&hl=es
-- ResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez
+- ORCID: <https://orcid.org/0009-0009-3386-8571>
+- Google Scholar: <https://scholar.google.com/citations?user=W69TP6QAAAAJ>
+- ResearchGate: <https://www.researchgate.net/profile/Jamil-Ramirez>
 
 ## Professional Profiles
 
-- Website: https://jamilramirez.github.io
-- GitHub: https://github.com/JamilRamirez
+- GitHub: <https://github.com/JamilRamirez>
+- LinkedIn: <https://www.linkedin.com/in/jamil-r-762098b1/>

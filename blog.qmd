@@ -2,12 +2,14 @@
 title: "Technical Notes"
 ---
 
-Coming soon.
+This section will contain technical notes, tutorials and reproducible workflows related to hydrology, water resources and environmental data science.
 
-Planned topics:
+Planned topics include:
 
-- IDF curves in R
-- GEV vs Gumbel
-- PISCO rainfall data
-- Hydrological reproducibility
-- Quarto workflows
+- Intensity–Duration–Frequency (IDF) curve development in R
+- GEV and Gumbel distributions for hydrological frequency analysis
+- Working with PISCO precipitation data
+- Reproducible hydrological research using R and Quarto
+- Rainfall–runoff modelling workflows
+- Hydrological uncertainty assessment
+- Data quality control and gap-filling techniques

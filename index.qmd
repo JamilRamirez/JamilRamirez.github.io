@@ -4,31 +4,30 @@ title: "Home"
 
 # Jamil Isaac Ramirez Muñoz
 
-Mechanical Fluids Engineering Graduate | Hydrology, Hydraulics and Water Resources
+**B.Sc. in Mechanical Fluids Engineering**
 
-I am a Mechanical Fluids Engineer from Peru working in hydrology, hydraulics and environmental data analysis. My research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and data-driven approaches for water resources applications.
+Hydrology • Hydraulics • Water Resources
 
-This website contains my publications, research projects, technical notes and reproducible workflows related to hydrology and environmental data science.
+I am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.
 
-## Featured Research Areas
+This website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.
 
-- Hydrological modelling
-- Extreme rainfall and flood analysis
-- Satellite precipitation products
-- Hydrological uncertainty
-- Environmental data science
-- Reproducible workflows in R and Quarto
+## Current Research
 
-## Recent Projects
+### Hydrological Uncertainty
 
-### Uncertainty of Indirect IDF Estimation Methods
+Understanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.
 
-Assessment of uncertainty propagation from indirect IDF methods into peak discharge estimation in ungauged coastal catchments.
+### Extreme Events and Design Hydrology
 
-### Hydrological Impacts of Gap-Filled Streamflow Records
+Analysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.
 
-Evaluation of how streamflow reconstruction methods affect annual water balance estimates and hydrological indicators.
+### Data-Driven Hydrology
 
-### Machine Learning for Streamflow Simulation
+Application of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis.
 
-Comparison of machine learning and traditional approaches for streamflow prediction using open precipitation datasets.
+## Recent Highlights
+
+* Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.
+* Published comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.
+* Ongoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty.

@@ -2,14 +2,42 @@
 title: "Research Projects"
 ---
 
-## Malanche Catchment
+## Ongoing Projects
 
-IDF uncertainty and peak discharge estimation.
+### Malanche Catchment
 
-## Gap-Filling Uncertainty
+Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.
 
-Impact of streamflow reconstruction methods on annual hydrological indicators.
+**Status:** Ongoing
 
-## Machine Learning Hydrology
+### Cañete River Basin
 
-Data-driven streamflow simulation using open precipitation products.
+Assessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.
+
+**Status:** Ongoing
+
+### Streamflow Gap-Filling Uncertainty
+
+Investigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.
+
+**Status:** Ongoing
+
+### Precipitation-Only Streamflow Modelling
+
+Assessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.
+
+**Status:** Ongoing
+
+## Completed Projects
+
+### Satellite Precipitation Bias Correction
+
+Bias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.
+
+**Status:** Published (2026)
+
+### Machine Learning Streamflow Reconstruction
+
+Comparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.
+
+**Status:** Published (2026)
