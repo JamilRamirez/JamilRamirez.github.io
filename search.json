@@ -4,77 +4,84 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Ingeniería del Agua.\nDOI: 10.4995/ia.24476\n\n\n\nTecnología y ciencias del agua.\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., Berrocal, B. F., & Astocondor, J. A.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
     "section": "",
-    "text": "Ingeniería del Agua.\nDOI: 10.4995/ia.24476\n\n\n\nTecnología y ciencias del agua.\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., Berrocal, B. F., & Astocondor, J. A.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Mechanical Fluids Engineering Graduate | Hydrology, Hydraulics and Water Resources\nI am a Mechanical Fluids Engineer from Peru working in hydrology, hydraulics and environmental data analysis. My research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and data-driven approaches for water resources applications.\nThis website contains my publications, research projects, technical notes and reproducible workflows related to hydrology and environmental data science.\n\n\n\nHydrological modelling\nExtreme rainfall and flood analysis\nSatellite precipitation products\nHydrological uncertainty\nEnvironmental data science\nReproducible workflows in R and Quarto\n\n\n\n\n\n\nAssessment of uncertainty propagation from indirect IDF methods into peak discharge estimation in ungauged coastal catchments.\n\n\n\nEvaluation of how streamflow reconstruction methods affect annual water balance estimates and hydrological indicators.\n\n\n\nComparison of machine learning and traditional approaches for streamflow prediction using open precipitation datasets."
+    "text": "B.Sc. in Mechanical Fluids Engineering\nHydrology • Hydraulics • Water Resources\nI am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.\nThis website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.\n\n\n\n\nUnderstanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis.\n\n\n\n\n\nPublished research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
   },
   {
-    "objectID": "index.html#featured-research-areas",
-    "href": "index.html#featured-research-areas",
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
     "title": "Home",
     "section": "",
-    "text": "Hydrological modelling\nExtreme rainfall and flood analysis\nSatellite precipitation products\nHydrological uncertainty\nEnvironmental data science\nReproducible workflows in R and Quarto"
+    "text": "Understanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis."
   },
   {
-    "objectID": "index.html#recent-projects",
-    "href": "index.html#recent-projects",
+    "objectID": "index.html#recent-highlights",
+    "href": "index.html#recent-highlights",
     "title": "Home",
     "section": "",
-    "text": "Assessment of uncertainty propagation from indirect IDF methods into peak discharge estimation in ungauged coastal catchments.\n\n\n\nEvaluation of how streamflow reconstruction methods affect annual water balance estimates and hydrological indicators.\n\n\n\nComparison of machine learning and traditional approaches for streamflow prediction using open precipitation datasets."
+    "text": "Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Technical Notes",
     "section": "",
-    "text": "Coming soon.\nPlanned topics:\n\nIDF curves in R\nGEV vs Gumbel\nPISCO rainfall data\nHydrological reproducibility\nQuarto workflows"
+    "text": "This section will contain technical notes, tutorials and reproducible workflows related to hydrology, water resources and environmental data science.\nPlanned topics include:\n\nIntensity–Duration–Frequency (IDF) curve development in R\nGEV and Gumbel distributions for hydrological frequency analysis\nWorking with PISCO precipitation data\nReproducible hydrological research using R and Quarto\nRainfall–runoff modelling workflows\nHydrological uncertainty assessment\nData quality control and gap-filling techniques"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a Mechanical Fluids Engineer from Peru working in hydrology, hydraulics and water resources analysis.\nMy work combines hydrological modelling, precipitation analysis, uncertainty assessment and data-driven methods to support water resources studies and environmental decision-making.\nThis website serves as a repository for publications, research projects, technical notes and reproducible workflows related to hydrology and environmental data science."
+    "text": "I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.\nMy research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.\nMy current research explores rainfall–runoff modelling, satellite and gridded precipitation products, extreme event analysis, and the application of statistical and machine learning methods in hydrology.\nThis website serves as a repository of publications, research projects, technical notes and reproducible workflows developed using R, GIS tools and open hydrological datasets."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "About",
     "section": "Research Interests",
-    "text": "Research Interests\n\nHydrology and water resources\nHydrological modelling\nHydrological frequency analysis\nExtreme rainfall and flood analysis\nSatellite precipitation products\nHydrological uncertainty\nEnvironmental data science\nReproducible research with R and Quarto"
+    "text": "Research Interests\n\nHydrology and Water Resources\nHydrological Modelling\nHydrological Frequency Analysis\nExtreme Rainfall and Flood Analysis\nSatellite and Gridded Precipitation Products\nHydrological Uncertainty Assessment\nMachine Learning Applications in Hydrology\nEnvironmental Data Science\nReproducible Research with R and Quarto"
+  },
+  {
+    "objectID": "about.html#professional-profiles",
+    "href": "about.html#professional-profiles",
+    "title": "About",
+    "section": "Professional Profiles",
+    "text": "Professional Profiles\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
   },
   {
     "objectID": "about.html#contact",
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\nYou can find my publications, projects and professional profiles through the links available on this website."
+    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above."
   },
   {
     "objectID": "CV.html",
     "href": "CV.html",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "Mechanical Fluids Engineering Graduate\n\n\nMechanical Fluids Engineer with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows.\n\n\n\nNational University of San Marcos (UNMSM)\nB.Sc. in Mechanical Fluids Engineering\nLima, Peru\n2022\n\n\n\n\n\nEngineering Assistant\nDecember 2022 – Present\n\nSupport hydrological and hydraulic studies for water resources projects.\nPerform hydrological analyses and hydraulic calculations.\nProcess and analyze environmental and engineering datasets.\nPrepare technical reports and engineering documentation.\n\n\n\n\nGIS and Database Assistant\nSeptember 2021 – December 2021\n\nConducted field data collection and survey activities.\nOrganized, processed and systematized spatial and tabular datasets.\nSupported GIS-based data management and reporting tasks.\nAssisted in database development and information management.\n\n\n\n\n\n\n\nBerrocal, B. F., & Ramirez, J. I. (2026).\nBias correction and statistical transfer of satellite annual maximum precipitation series in the Piura River.\nIngeniería del Agua.\nDOI: https://doi.org/10.4995/ia.24476\n\nBerrocal, B., & Ramirez, J. (2026).\nComparative analysis of traditional models vs machine learning for daily streamflow infilling in representative Peruvian basins.\nTecnología y Ciencias del Agua.\nDOI: https://doi.org/10.24850/j-tyca-18-02-02\n\n\n\n\n\n\n\nR\nR Markdown\nQuarto\nStatistical Analysis\nTime Series Analysis\nMachine Learning\n\n\n\n\n\nHydrological Modelling\nFrequency Analysis\nIDF Curves\nFlood Estimation\nWater Resources Assessment\nHydrological Data Processing\n\n\n\n\n\nQGIS\nArcGIS\nRemote Sensing Data Processing\n\n\n\n\n\nLaTeX\nOverleaf\nZotero\nReproducible Research Workflows\n\n\n\n\n\n\nSpanish (Native)\nEnglish (Advanced)\n\n\n\n\n\nORCID: 0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ&hl=es\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez\n\n\n\n\n\nWebsite: https://jamilramirez.github.io\nGitHub: https://github.com/JamilRamirez"
+    "text": "Mechanical Fluids Engineering Graduate\n\n\nMechanical Fluids Engineering Graduate with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows.\n\n\n\nNational University of San Marcos (UNMSM)\nB.Sc. in Mechanical Fluids Engineering\nLima, Peru\n2022\n\n\n\n\n\nEngineering Assistant\nDecember 2022 – Present\n\nSupport hydrological and hydraulic studies for water resources projects.\nPerform hydrological analyses and hydraulic calculations.\nProcess and analyze environmental and engineering datasets.\nPrepare technical reports and engineering documentation.\n\n\n\n\nGIS and Database Assistant\nSeptember 2021 – December 2021\n\nConducted field data collection and survey activities.\nOrganized, processed and systematized spatial and tabular datasets.\nSupported GIS-based data management and reporting tasks.\nAssisted in database development and information management.\n\n\n\n\n\n\n\nBerrocal, B. F., & Ramirez, J. I. (2026).\nBias correction and statistical transfer of satellite annual maximum precipitation series in the Piura River.\nIngeniería del Agua.\nDOI: https://doi.org/10.4995/ia.24476\n\nBerrocal, B., & Ramirez, J. (2026).\nComparative analysis of traditional models vs machine learning for daily streamflow infilling in representative Peruvian basins.\nTecnología y Ciencias del Agua.\nDOI: https://doi.org/10.24850/j-tyca-18-02-02\n\n\n\n\n\n\n\nR\nQuarto\nQGIS\nArcGIS\nHEC-HMS\nHEC-RAS\nIber\nLaTeX\nZotero\n\n\n\n\n\nHydrological Modelling\nHydrological Frequency Analysis\nFlood Estimation\nWater Resources Assessment\nStatistical Analysis\nTime Series Analysis\nMachine Learning\nRemote Sensing Data Processing\nReproducible Research Workflows\n\n\n\n\n\n\nSpanish (Native)\nEnglish (Advanced)\n\n\n\n\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez\n\n\n\n\n\nGitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
   },
   {
     "objectID": "CV.html#professional-profile",
     "href": "CV.html#professional-profile",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "Mechanical Fluids Engineer with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows."
+    "text": "Mechanical Fluids Engineering Graduate with experience in hydrology, hydraulics and water resources analysis. Author and co-author of peer-reviewed publications in hydrology and environmental sciences. Experienced in hydrological modelling, precipitation analysis, uncertainty assessment and reproducible scientific workflows."
   },
   {
     "objectID": "CV.html#education",
@@ -102,7 +109,7 @@
     "href": "CV.html#technical-skills",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "R\nR Markdown\nQuarto\nStatistical Analysis\nTime Series Analysis\nMachine Learning\n\n\n\n\n\nHydrological Modelling\nFrequency Analysis\nIDF Curves\nFlood Estimation\nWater Resources Assessment\nHydrological Data Processing\n\n\n\n\n\nQGIS\nArcGIS\nRemote Sensing Data Processing\n\n\n\n\n\nLaTeX\nOverleaf\nZotero\nReproducible Research Workflows"
+    "text": "R\nQuarto\nQGIS\nArcGIS\nHEC-HMS\nHEC-RAS\nIber\nLaTeX\nZotero\n\n\n\n\n\nHydrological Modelling\nHydrological Frequency Analysis\nFlood Estimation\nWater Resources Assessment\nStatistical Analysis\nTime Series Analysis\nMachine Learning\nRemote Sensing Data Processing\nReproducible Research Workflows"
   },
   {
     "objectID": "CV.html#languages",
@@ -116,41 +123,34 @@
     "href": "CV.html#academic-profiles",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "ORCID: 0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ&hl=es\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez"
+    "text": "ORCID: https://orcid.org/0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez"
   },
   {
     "objectID": "CV.html#professional-profiles",
     "href": "CV.html#professional-profiles",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "Website: https://jamilramirez.github.io\nGitHub: https://github.com/JamilRamirez"
+    "text": "GitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Research Projects",
     "section": "",
-    "text": "IDF uncertainty and peak discharge estimation."
+    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
   },
   {
-    "objectID": "projects.html#malanche-catchment",
-    "href": "projects.html#malanche-catchment",
+    "objectID": "projects.html#ongoing-projects",
+    "href": "projects.html#ongoing-projects",
     "title": "Research Projects",
     "section": "",
-    "text": "IDF uncertainty and peak discharge estimation."
+    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
   },
   {
-    "objectID": "projects.html#gap-filling-uncertainty",
-    "href": "projects.html#gap-filling-uncertainty",
+    "objectID": "projects.html#completed-projects",
+    "href": "projects.html#completed-projects",
     "title": "Research Projects",
-    "section": "Gap-Filling Uncertainty",
-    "text": "Gap-Filling Uncertainty\nImpact of streamflow reconstruction methods on annual hydrological indicators."
-  },
-  {
-    "objectID": "projects.html#machine-learning-hydrology",
-    "href": "projects.html#machine-learning-hydrology",
-    "title": "Research Projects",
-    "section": "Machine Learning Hydrology",
-    "text": "Machine Learning Hydrology\nData-driven streamflow simulation using open precipitation products."
+    "section": "Completed Projects",
+    "text": "Completed Projects\n\nSatellite Precipitation Bias Correction\nBias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.\nStatus: Published (2026)\n\n\nMachine Learning Streamflow Reconstruction\nComparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.\nStatus: Published (2026)"
   }
 ]
