@@ -14,7 +14,7 @@ DOI: [10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
 
 ### Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins
 
-**Ramirez, J. I., Berrocal, B. F., & Astocondor, J. A.**
+**Ramirez, J. I., & Berrocal, B. F.**
 
 *Tecnología y Ciencias del Agua*
 
