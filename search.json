@@ -4,14 +4,14 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., Berrocal, B. F., & Astocondor, J. A.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
     "section": "",
-    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., Berrocal, B. F., & Astocondor, J. A.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
   },
   {
     "objectID": "index.html",
@@ -81,7 +81,7 @@
     "href": "about.html#contact",
     "title": "About",
     "section": "Contact",
-    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above."
+    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.\nEmail: jamil_ramirez.m@hotmail.com"
   },
   {
     "objectID": "CV.html",
@@ -165,6 +165,6 @@
     "href": "projects.html#completed-projects",
     "title": "Research Projects",
     "section": "Completed Projects",
-    "text": "Completed Projects\n\nSatellite Precipitation Bias Correction\nBias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.\nStatus: Published (2026)\n\n\nMachine Learning Streamflow Reconstruction\nComparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.\nStatus: Published (2026)"
+    "text": "Completed Projects\n\nSatellite Precipitation Bias Correction\nBias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.\nStatus: Published (2026) DOI: 10.4995/ia.24476\n\n\nMachine Learning Streamflow Reconstruction\nComparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.\nStatus: Published (2026) DOI: 10.4995/ia.24476"
   }
 ]
