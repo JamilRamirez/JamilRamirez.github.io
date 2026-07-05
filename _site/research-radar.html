@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -334,136 +305,400 @@ a {
   color: #2E86E8;
 }
 </style>
-<p>#| echo: false #| results: asis #| fig-width: 11 #| fig-height: 8.5 #| fig-align: center #| out-width: “100%”</p>
-<p>library(fmsb)</p>
-<p>articles &lt;- data.frame( code = paste0(“A”, 1:7), title = c( “Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú”, “Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura”, “Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability”, “Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets”, “Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes”, “Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins”, “GLUE–Limits of Acceptability Framework for Rainfall–Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation” ), status = c( “Published”, “Published”, “Manuscript”, “Manuscript”, “Manuscript”, “Manuscript”, “Manuscript” ), venue = c( “Tecnología y Ciencias del Agua”, “Ingeniería del Agua”, “RBRH - Revista Brasileira de Recursos Hídricos”, “Revista Facultad de Ingeniería Universidad de Antioquia”, “Hydrological Sciences Journal”, “Water Resources Management”, “Journal of Hydrologic Engineering” ), doi = c( “10.24850/j-tyca-18-02-02”, “10.4995/ia.24476”, ““,”“,”“,”“,”” ), stringsAsFactors = FALSE )</p>
-<p>pillars &lt;- c( “Surface”, “River”, “Hydrogeology”, “Hydrometeorology”, “Water”, “Water”, “Statistical”, “Remote sensing /” )</p>
-<p>pillar_names &lt;- c( “Surface hydrology”, “River hydraulics”, “Hydrogeology”, “Hydrometeorology”, “Water quality”, “Water management”, “Statistical hydrology”, “Remote sensing / Hydroinformatics” )</p>
-<p>pillar_desc &lt;- c( “Rainfall-runoff processes, streamflow estimation, hydrological signatures, and catchment response.”, “Channel flow, routing, hydraulic interpretation, and flood-related applications.”, “Groundwater processes and aquifer-centered analysis.”, “Precipitation, climate variability, satellite/reanalysis products, and extreme rainfall.”, “Water chemistry, pollution, ecological indicators, and environmental water quality.”, “Planning, water balance, decision support, infrastructure, and resource management implications.”, “Uncertainty, bias correction, frequency analysis, gap filling, and statistical methods.”, “Open datasets, reproducible coding, geospatial workflows, machine learning, and satellite products.” )</p>
-<p>scores &lt;- data.frame( surface_hydrology = c(9, 8, 6, 8, 9, 9, 10), river_hydraulics = c(1, 1, 1, 3, 2, 1, 2), hydrogeology = c(0, 0, 0, 0, 0, 0, 0), hydrometeorology = c(4, 9, 9, 9, 8, 3, 7), water_quality = c(0, 0, 0, 0, 0, 0, 0), water_management = c(5, 4, 5, 6, 5, 9, 6), statistical_hydrology = c(9, 8, 8, 9, 8, 9, 8), remote_sensing_hydroinformatics = c(8, 9, 9, 8, 9, 6, 8) )</p>
-<p>colnames(scores) &lt;- pillars</p>
-<p>colors &lt;- c( “#2E86E8”, “#1DAF8A”, “#E85A30”, “#9B59B6”, “#E67E22”, “#E91E8C”, “#27AE60” )</p>
-<p>fills &lt;- adjustcolor(colors, alpha.f = 0.13)</p>
-cat(’
 <div class="research-wrap">
-<p>’)</p>
-cat(’
+
 <div class="note-box">
-<p>This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.</p>
+This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.
 </div>
-<p>’)</p>
-<p>radar_df &lt;- rbind( rep(10, length(pillars)), rep(0, length(pillars)), scores )</p>
-<p>op &lt;- par( bg = “#f7f6f2”, mar = c(1.2, 1.2, 2.2, 1.2), family = “sans” )</p>
-<p>radarchart( radar_df, axistype = 1, pcol = colors, pfcol = fills, plwd = 2.4, plty = 1, cglcol = “#d8d5cc”, cglty = 1, cglwd = 0.8, axislabcol = “#77736b”, caxislabels = c(““,”2”, “4”, “6”, “8”, “10”), calcex = 0.78, vlcex = 0.9, vlabels = pillars, title = “Research Radar — Hydrology, Open Data and Uncertainty” )</p>
-<p>legend( “bottomleft”, legend = paste0(articles<span class="math inline">\(code, "  ", articles\)</span>status), col = colors, lty = 1, lwd = 2.5, pch = 19, bty = “n”, cex = 0.82, text.col = “#44413c”, pt.cex = 0.9 )</p>
-<p>par(op)</p>
-cat(’
-<div class="section-title">
-Interpretation
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="research-radar_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
 </div>
+</div>
+</div>
+<div class="section-title">Interpretation</div>
+
 <p>
 My current research profile is concentrated in surface hydrology, hydrometeorology, statistical hydrology, uncertainty analysis, and hydroinformatics. This reflects a methodological focus on open hydroclimatic datasets, rainfall-runoff modelling, bias correction, gap filling, regional constraints, and reproducible workflows for data-scarce basins.
 </p>
+
 <p>
 The radar also shows the boundaries of this research line. Hydrogeology, water quality, and hydroecology are not central components of the studies represented here. This is not a weakness of the individual papers, but a deliberate delimitation of the research program.
 </p>
-<p>’)</p>
-cat(’
-<div class="section-title">
-Articles included
-</div>
-‘) cat(’
+
+<div class="section-title">Articles included</div>
 <div class="article-grid">
-<p>’)</p>
-<p>for (i in seq_len(nrow(articles))) { doi_text &lt;- if (articles<span class="math inline">\(doi[i] == "") {
-    "DOI: —"
-  } else {
-    paste0(
-      'DOI: &lt;a href="https://doi.org/',
-      articles\)</span>doi[i], ’” target=“_blank”&gt;’, articles$doi[i], “” ) }</p>
-cat( paste0( ’
-<div class="article-card" style="border-left-color:', colors[i], ';">
-‘,’
+<div class="article-card" style="border-left-color:#2E86E8;">
 <div class="article-title">
-‘,’<span class="article-code" style="background:', colors[i], ';">‘, articles<span class="math inline">\(code[i], '&lt;/span&gt;',
-      articles\)</span>title[i],’
-</span></div>
-‘,’
+<span class="article-code" style="background:#2E86E8;">A1</span>Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú
+</div>
 <div class="article-meta">
-‘,’<span class="badge">‘, articles<span class="math inline">\(status[i], '&lt;/span&gt;',
-      articles\)</span>venue[i],’ · ‘, doi_text,’
-</span></div>
-‘,’
+<span class="badge">Published</span>Tecnología y Ciencias del Agua · DOI: <a href="https://doi.org/10.24850/j-tyca-18-02-02" target="_blank">10.24850/j-tyca-18-02-02</a>
 </div>
-<p>’ ) ) }</p>
-cat(’
 </div>
-<p>’)</p>
-cat(’
-<div class="section-title">
-Thematic pillars
+<div class="article-card" style="border-left-color:#1DAF8A;">
+<div class="article-title">
+<span class="article-code" style="background:#1DAF8A;">A2</span>Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura
 </div>
-‘) cat(’
+<div class="article-meta">
+<span class="badge">Published</span>Ingeniería del Agua · DOI: <a href="https://doi.org/10.4995/ia.24476" target="_blank">10.4995/ia.24476</a>
+</div>
+</div>
+<div class="article-card" style="border-left-color:#E85A30;">
+<div class="article-title">
+<span class="article-code" style="background:#E85A30;">A3</span>Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability
+</div>
+<div class="article-meta">
+<span class="badge">Manuscript</span>RBRH - Revista Brasileira de Recursos Hídricos · DOI: -
+</div>
+</div>
+<div class="article-card" style="border-left-color:#9B59B6;">
+<div class="article-title">
+<span class="article-code" style="background:#9B59B6;">A4</span>Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets
+</div>
+<div class="article-meta">
+<span class="badge">Manuscript</span>Revista Facultad de Ingeniería Universidad de Antioquia · DOI: -
+</div>
+</div>
+<div class="article-card" style="border-left-color:#E67E22;">
+<div class="article-title">
+<span class="article-code" style="background:#E67E22;">A5</span>Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes
+</div>
+<div class="article-meta">
+<span class="badge">Manuscript</span>Hydrological Sciences Journal · DOI: -
+</div>
+</div>
+<div class="article-card" style="border-left-color:#E91E8C;">
+<div class="article-title">
+<span class="article-code" style="background:#E91E8C;">A6</span>Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins
+</div>
+<div class="article-meta">
+<span class="badge">Manuscript</span>Water Resources Management · DOI: -
+</div>
+</div>
+<div class="article-card" style="border-left-color:#27AE60;">
+<div class="article-title">
+<span class="article-code" style="background:#27AE60;">A7</span>GLUE-Limits of Acceptability Framework for Rainfall-Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation
+</div>
+<div class="article-meta">
+<span class="badge">Manuscript</span>Journal of Hydrologic Engineering · DOI: -
+</div>
+</div>
+</div>
+<div class="section-title">Thematic pillars</div>
 <div class="pillar-grid">
-<p>’)</p>
-for (i in seq_along(pillar_names)) { cat( paste0( ’
 <div class="pillar-card">
-‘,’
 <div class="pillar-name">
-‘, pillar_names[i],’
+Surface hydrology
 </div>
-‘,’
 <div class="pillar-desc">
-‘, pillar_desc[i],’
+Rainfall-runoff processes, streamflow estimation, hydrological signatures, and catchment response.
 </div>
-‘,’
 </div>
-<p>’ ) ) }</p>
-cat(’
+<div class="pillar-card">
+<div class="pillar-name">
+River hydraulics
 </div>
-<p>’)</p>
-cat(’
-<div class="section-title">
-Scoring logic
+<div class="pillar-desc">
+Channel flow, routing, hydraulic interpretation, and flood-related applications.
 </div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Hydrogeology
+</div>
+<div class="pillar-desc">
+Groundwater processes and aquifer-centered analysis.
+</div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Hydrometeorology
+</div>
+<div class="pillar-desc">
+Precipitation, climate variability, satellite/reanalysis products, and extreme rainfall.
+</div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Water quality
+</div>
+<div class="pillar-desc">
+Water chemistry, pollution, ecological indicators, and environmental water quality.
+</div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Water management
+</div>
+<div class="pillar-desc">
+Planning, water balance, decision support, infrastructure, and resource management implications.
+</div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Statistical hydrology
+</div>
+<div class="pillar-desc">
+Uncertainty, bias correction, frequency analysis, gap filling, and statistical methods.
+</div>
+</div>
+<div class="pillar-card">
+<div class="pillar-name">
+Remote sensing / Hydroinformatics
+</div>
+<div class="pillar-desc">
+Open datasets, reproducible coding, geospatial workflows, machine learning, and satellite products.
+</div>
+</div>
+</div>
+<div class="section-title">Scoring logic</div>
+
 <p>
 The thematic scores range from 0 to 10 and describe the relative emphasis of each article across the eight pillars. A high score means that the pillar is central to the article. A low score means that the pillar is peripheral or absent.
 </p>
-<p>’)</p>
-<p>score_table &lt;- data.frame( Code = articles$code, Surface = scores[[1]], River = scores[[2]], Hydrogeology = scores[[3]], Hydrometeorology = scores[[4]], Quality = scores[[5]], Management = scores[[6]], Statistics = scores[[7]], Hydroinformatics = scores[[8]] )</p>
-cat(’
-
-‘) cat(’
-<p>’)</p>
-for (nm in names(score_table)) { cat(paste0(’
-<p>’)) }</p>
-cat(’
-
-‘) cat(’
-<p>’)</p>
-for (i in seq_len(nrow(score_table))) { cat(’
-
-‘) for (j in seq_len(ncol(score_table))) { cat(paste0(’
-
-‘)) } cat(’
-<p>’) }</p>
-cat(’
-<table class="score-table"><thead>
+<table class="score-table">
+<thead>
 <tr>
 <th>
-‘, nm,’
+Code
+</th>
+<th>
+Surface
+</th>
+<th>
+River
+</th>
+<th>
+Hydrogeology
+</th>
+<th>
+Hydrometeorology
+</th>
+<th>
+Quality
+</th>
+<th>
+Management
+</th>
+<th>
+Statistics
+</th>
+<th>
+Hydroinformatics
 </th>
 </tr>
-</thead><tbody>
-<tr><td>
-‘, score_table[i, j],’
-</td></tr>
+</thead>
+<tbody>
+<tr>
+<td>
+A1
+</td>
+<td>
+9
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+4
+</td>
+<td>
+0
+</td>
+<td>
+5
+</td>
+<td>
+9
+</td>
+<td>
+8
+</td>
+</tr>
+<tr>
+<td>
+A2
+</td>
+<td>
+8
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+9
+</td>
+<td>
+0
+</td>
+<td>
+4
+</td>
+<td>
+8
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+A3
+</td>
+<td>
+6
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+9
+</td>
+<td>
+0
+</td>
+<td>
+5
+</td>
+<td>
+8
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+A4
+</td>
+<td>
+8
+</td>
+<td>
+3
+</td>
+<td>
+0
+</td>
+<td>
+9
+</td>
+<td>
+0
+</td>
+<td>
+6
+</td>
+<td>
+9
+</td>
+<td>
+8
+</td>
+</tr>
+<tr>
+<td>
+A5
+</td>
+<td>
+9
+</td>
+<td>
+2
+</td>
+<td>
+0
+</td>
+<td>
+8
+</td>
+<td>
+0
+</td>
+<td>
+5
+</td>
+<td>
+8
+</td>
+<td>
+9
+</td>
+</tr>
+<tr>
+<td>
+A6
+</td>
+<td>
+9
+</td>
+<td>
+1
+</td>
+<td>
+0
+</td>
+<td>
+3
+</td>
+<td>
+0
+</td>
+<td>
+9
+</td>
+<td>
+9
+</td>
+<td>
+6
+</td>
+</tr>
+<tr>
+<td>
+A7
+</td>
+<td>
+10
+</td>
+<td>
+2
+</td>
+<td>
+0
+</td>
+<td>
+7
+</td>
+<td>
+0
+</td>
+<td>
+6
+</td>
+<td>
+8
+</td>
+<td>
+8
+</td>
+</tr>
 </tbody>
 </table>
-<p>’)</p>
-cat(’
 </div>
-<p>’)</p>
 
 
 

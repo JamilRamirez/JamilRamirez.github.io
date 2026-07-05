@@ -8,6 +8,7 @@ format:
 execute:
   warning: false
   message: false
+  echo: false
 ---
 
 ```{=html}
@@ -163,9 +164,15 @@ a {
 </style>
 ```
 
+```{=html}
+<div class="research-wrap">
+
+<div class="note-box">
+This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.
+</div>
+```
+
 ```{r}
-#| echo: false
-#| results: asis
 #| fig-width: 11
 #| fig-height: 8.5
 #| fig-align: center
@@ -182,7 +189,7 @@ articles <- data.frame(
     "Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets",
     "Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes",
     "Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins",
-    "GLUE–Limits of Acceptability Framework for Rainfall–Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation"
+    "GLUE-Limits of Acceptability Framework for Rainfall-Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation"
   ),
   status = c(
     "Published",
@@ -272,14 +279,6 @@ colors <- c(
 
 fills <- adjustcolor(colors, alpha.f = 0.13)
 
-cat('<div class="research-wrap">')
-
-cat('
-<div class="note-box">
-This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.
-</div>
-')
-
 radar_df <- rbind(
   rep(10, length(pillars)),
   rep(0, length(pillars)),
@@ -307,7 +306,7 @@ radarchart(
   calcex = 0.78,
   vlcex = 0.9,
   vlabels = pillars,
-  title = "Research Radar — Hydrology, Open Data and Uncertainty"
+  title = "Research Radar - Hydrology, Open Data and Uncertainty"
 )
 
 legend(
@@ -324,8 +323,9 @@ legend(
 )
 
 par(op)
+```
 
-cat('
+```{=html}
 <div class="section-title">Interpretation</div>
 
 <p>
@@ -335,14 +335,18 @@ My current research profile is concentrated in surface hydrology, hydrometeorolo
 <p>
 The radar also shows the boundaries of this research line. Hydrogeology, water quality, and hydroecology are not central components of the studies represented here. This is not a weakness of the individual papers, but a deliberate delimitation of the research program.
 </p>
-')
 
-cat('<div class="section-title">Articles included</div>')
+<div class="section-title">Articles included</div>
+```
+
+```{r}
+#| results: asis
+
 cat('<div class="article-grid">')
 
 for (i in seq_len(nrow(articles))) {
   doi_text <- if (articles$doi[i] == "") {
-    "DOI: —"
+    "DOI: -"
   } else {
     paste0(
       'DOI: <a href="https://doi.org/',
@@ -372,8 +376,15 @@ for (i in seq_len(nrow(articles))) {
 }
 
 cat('</div>')
+```
 
-cat('<div class="section-title">Thematic pillars</div>')
+```{=html}
+<div class="section-title">Thematic pillars</div>
+```
+
+```{r}
+#| results: asis
+
 cat('<div class="pillar-grid">')
 
 for (i in seq_along(pillar_names)) {
@@ -388,14 +399,18 @@ for (i in seq_along(pillar_names)) {
 }
 
 cat('</div>')
+```
 
-cat('
+```{=html}
 <div class="section-title">Scoring logic</div>
 
 <p>
 The thematic scores range from 0 to 10 and describe the relative emphasis of each article across the eight pillars. A high score means that the pillar is central to the article. A low score means that the pillar is peripheral or absent.
 </p>
-')
+```
+
+```{r}
+#| results: asis
 
 score_table <- data.frame(
   Code = articles$code,
@@ -428,5 +443,6 @@ for (i in seq_len(nrow(score_table))) {
 }
 
 cat('</tbody></table>')
+```
 
-cat('</div>')
+</div>
