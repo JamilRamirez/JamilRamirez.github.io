@@ -8,17 +8,21 @@ if errorlevel 1 goto error
 
 echo.
 echo === Add changes ===
-git add .
+git add -A
 if errorlevel 1 goto error
 
 echo.
 echo === Commit changes if needed ===
 git diff --cached --quiet
-if %errorlevel%==0 (
+set DIFF_EXIT=%ERRORLEVEL%
+
+if "%DIFF_EXIT%"=="0" (
     echo No changes to commit.
-) else (
+) else if "%DIFF_EXIT%"=="1" (
     git commit -m "Website update"
     if errorlevel 1 goto error
+) else (
+    goto error
 )
 
 echo.
@@ -27,9 +31,19 @@ git pull --rebase origin main
 if errorlevel 1 goto error
 
 echo.
-echo === Push to GitHub ===
-git push
+echo === Push source files to GitHub ===
+git push origin main
 if errorlevel 1 goto error
+
+echo.
+echo === Publish site to gh-pages ===
+quarto publish gh-pages --no-prompt
+if errorlevel 1 goto error
+
+echo.
+echo === Opening website ===
+timeout /t 8 /nobreak >nul
+start "" "https://jamilramirez.github.io/?refresh=%RANDOM%"
 
 echo.
 echo Done.
@@ -41,8 +55,3 @@ echo.
 echo ERROR: Something failed. Check the messages above.
 pause
 exit /b 1
-
-echo.
-echo === Publish site to gh-pages ===
-quarto publish gh-pages
-if errorlevel 1 goto error
