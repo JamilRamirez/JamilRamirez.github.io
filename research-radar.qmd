@@ -3,8 +3,9 @@ title: "Research Radar"
 subtitle: "Hydrology, Open Data and Uncertainty"
 format:
   html:
-    toc: false
-    page-layout: full
+    toc: true
+    toc-location: right
+    page-layout: article
 execute:
   warning: false
   message: false
@@ -33,13 +34,8 @@ body {
   color: #6f6b63;
 }
 
-.research-wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .note-box {
-  margin: 1.5rem auto 2rem auto;
+  margin: 1.5rem 0 2rem 0;
   padding: 1rem 1.2rem;
   background: #eeece7;
   border: 1px solid #d8d5cc;
@@ -47,14 +43,6 @@ body {
   color: #5f5b54;
   font-size: 0.96rem;
   line-height: 1.55;
-}
-
-.section-title {
-  margin-top: 2.5rem;
-  margin-bottom: 0.9rem;
-  font-size: 1.35rem;
-  font-weight: 750;
-  letter-spacing: -0.02em;
 }
 
 .article-grid {
@@ -164,22 +152,7 @@ a {
 </style>
 ```
 
-```{=html}
-<div class="research-wrap">
-
-<div class="note-box">
-This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.
-</div>
-```
-
 ```{r}
-#| fig-width: 11
-#| fig-height: 8.5
-#| fig-align: center
-#| out-width: "100%"
-
-library(fmsb)
-
 articles <- data.frame(
   code = paste0("A", 1:7),
   title = c(
@@ -276,6 +249,23 @@ colors <- c(
   "#E91E8C",
   "#27AE60"
 )
+```
+
+```{=html}
+<div class="note-box">
+This radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.
+</div>
+```
+
+## Research profile
+
+```{r}
+#| fig-width: 9
+#| fig-height: 6.6
+#| fig-align: center
+#| out-width: "95%"
+
+library(fmsb)
 
 fills <- adjustcolor(colors, alpha.f = 0.13)
 
@@ -287,7 +277,7 @@ radar_df <- rbind(
 
 op <- par(
   bg = "#f7f6f2",
-  mar = c(1.2, 1.2, 2.2, 1.2),
+  mar = c(0.8, 0.8, 2.0, 0.8),
   family = "sans"
 )
 
@@ -296,15 +286,15 @@ radarchart(
   axistype = 1,
   pcol = colors,
   pfcol = fills,
-  plwd = 2.4,
+  plwd = 2.2,
   plty = 1,
   cglcol = "#d8d5cc",
   cglty = 1,
   cglwd = 0.8,
   axislabcol = "#77736b",
   caxislabels = c("", "2", "4", "6", "8", "10"),
-  calcex = 0.78,
-  vlcex = 0.9,
+  calcex = 0.72,
+  vlcex = 0.78,
   vlabels = pillars,
   title = "Research Radar - Hydrology, Open Data and Uncertainty"
 )
@@ -314,30 +304,24 @@ legend(
   legend = paste0(articles$code, "  ", articles$status),
   col = colors,
   lty = 1,
-  lwd = 2.5,
+  lwd = 2.3,
   pch = 19,
   bty = "n",
-  cex = 0.82,
+  cex = 0.70,
   text.col = "#44413c",
-  pt.cex = 0.9
+  pt.cex = 0.8
 )
 
 par(op)
 ```
 
-```{=html}
-<div class="section-title">Interpretation</div>
+## Interpretation
 
-<p>
 My current research profile is concentrated in surface hydrology, hydrometeorology, statistical hydrology, uncertainty analysis, and hydroinformatics. This reflects a methodological focus on open hydroclimatic datasets, rainfall-runoff modelling, bias correction, gap filling, regional constraints, and reproducible workflows for data-scarce basins.
-</p>
 
-<p>
 The radar also shows the boundaries of this research line. Hydrogeology, water quality, and hydroecology are not central components of the studies represented here. This is not a weakness of the individual papers, but a deliberate delimitation of the research program.
-</p>
 
-<div class="section-title">Articles included</div>
-```
+## Articles included
 
 ```{r}
 #| results: asis
@@ -378,9 +362,7 @@ for (i in seq_len(nrow(articles))) {
 cat('</div>')
 ```
 
-```{=html}
-<div class="section-title">Thematic pillars</div>
-```
+## Thematic pillars
 
 ```{r}
 #| results: asis
@@ -401,13 +383,9 @@ for (i in seq_along(pillar_names)) {
 cat('</div>')
 ```
 
-```{=html}
-<div class="section-title">Scoring logic</div>
+## Scoring logic
 
-<p>
 The thematic scores range from 0 to 10 and describe the relative emphasis of each article across the eight pillars. A high score means that the pillar is central to the article. A low score means that the pillar is peripheral or absent.
-</p>
-```
 
 ```{r}
 #| results: asis
@@ -444,5 +422,3 @@ for (i in seq_len(nrow(score_table))) {
 
 cat('</tbody></table>')
 ```
-
-</div>
