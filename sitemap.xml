@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://JamilRamirez.github.io/publications.html</loc>
-    <lastmod>2026-06-07T20:37:23.068Z</lastmod>
+    <loc>https://JamilRamirez.github.io/research-radar.html</loc>
+    <lastmod>2026-07-05T01:25:53.461Z</lastmod>
   </url>
   <url>
-    <loc>https://JamilRamirez.github.io/index.html</loc>
-    <lastmod>2026-06-06T00:26:09.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JamilRamirez.github.io/blog.html</loc>
-    <lastmod>2026-06-06T22:39:58.775Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JamilRamirez.github.io/about.html</loc>
-    <lastmod>2026-06-07T20:39:21.971Z</lastmod>
+    <loc>https://JamilRamirez.github.io/projects.html</loc>
+    <lastmod>2026-06-07T20:41:06.058Z</lastmod>
   </url>
   <url>
     <loc>https://JamilRamirez.github.io/CV.html</loc>
     <lastmod>2026-06-06T00:35:02.785Z</lastmod>
   </url>
   <url>
-    <loc>https://JamilRamirez.github.io/projects.html</loc>
-    <lastmod>2026-06-07T20:41:06.058Z</lastmod>
+    <loc>https://JamilRamirez.github.io/about.html</loc>
+    <lastmod>2026-06-07T20:39:21.971Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JamilRamirez.github.io/blog.html</loc>
+    <lastmod>2026-06-06T22:39:58.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JamilRamirez.github.io/index.html</loc>
+    <lastmod>2026-06-06T00:26:09.889Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JamilRamirez.github.io/publications.html</loc>
+    <lastmod>2026-06-07T20:37:23.068Z</lastmod>
   </url>
 </urlset>

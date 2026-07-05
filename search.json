@@ -1,87 +1,31 @@
 [
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "research-radar.html",
+    "href": "research-radar.html",
+    "title": "Research Radar",
     "section": "",
-    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "#| echo: false #| results: asis #| fig-width: 11 #| fig-height: 8.5 #| fig-align: center #| out-width: “100%”\nlibrary(fmsb)\narticles &lt;- data.frame( code = paste0(“A”, 1:7), title = c( “Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú”, “Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura”, “Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability”, “Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets”, “Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes”, “Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins”, “GLUE–Limits of Acceptability Framework for Rainfall–Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation” ), status = c( “Published”, “Published”, “Manuscript”, “Manuscript”, “Manuscript”, “Manuscript”, “Manuscript” ), venue = c( “Tecnología y Ciencias del Agua”, “Ingeniería del Agua”, “RBRH - Revista Brasileira de Recursos Hídricos”, “Revista Facultad de Ingeniería Universidad de Antioquia”, “Hydrological Sciences Journal”, “Water Resources Management”, “Journal of Hydrologic Engineering” ), doi = c( “10.24850/j-tyca-18-02-02”, “10.4995/ia.24476”, ““,”“,”“,”“,”” ), stringsAsFactors = FALSE )\npillars &lt;- c( “Surface”, “River”, “Hydrogeology”, “Hydrometeorology”, “Water”, “Water”, “Statistical”, “Remote sensing /” )\npillar_names &lt;- c( “Surface hydrology”, “River hydraulics”, “Hydrogeology”, “Hydrometeorology”, “Water quality”, “Water management”, “Statistical hydrology”, “Remote sensing / Hydroinformatics” )\npillar_desc &lt;- c( “Rainfall-runoff processes, streamflow estimation, hydrological signatures, and catchment response.”, “Channel flow, routing, hydraulic interpretation, and flood-related applications.”, “Groundwater processes and aquifer-centered analysis.”, “Precipitation, climate variability, satellite/reanalysis products, and extreme rainfall.”, “Water chemistry, pollution, ecological indicators, and environmental water quality.”, “Planning, water balance, decision support, infrastructure, and resource management implications.”, “Uncertainty, bias correction, frequency analysis, gap filling, and statistical methods.”, “Open datasets, reproducible coding, geospatial workflows, machine learning, and satellite products.” )\nscores &lt;- data.frame( surface_hydrology = c(9, 8, 6, 8, 9, 9, 10), river_hydraulics = c(1, 1, 1, 3, 2, 1, 2), hydrogeology = c(0, 0, 0, 0, 0, 0, 0), hydrometeorology = c(4, 9, 9, 9, 8, 3, 7), water_quality = c(0, 0, 0, 0, 0, 0, 0), water_management = c(5, 4, 5, 6, 5, 9, 6), statistical_hydrology = c(9, 8, 8, 9, 8, 9, 8), remote_sensing_hydroinformatics = c(8, 9, 9, 8, 9, 6, 8) )\ncolnames(scores) &lt;- pillars\ncolors &lt;- c( “#2E86E8”, “#1DAF8A”, “#E85A30”, “#9B59B6”, “#E67E22”, “#E91E8C”, “#27AE60” )\nfills &lt;- adjustcolor(colors, alpha.f = 0.13)\ncat(’\n\n’)\ncat(’\n\nThis radar summarizes the thematic orientation of my research work. Scores do not represent article quality, journal rank, or scientific impact. They indicate the relative emphasis of each study across hydrological and methodological domains.\n\n’)\nradar_df &lt;- rbind( rep(10, length(pillars)), rep(0, length(pillars)), scores )\nop &lt;- par( bg = “#f7f6f2”, mar = c(1.2, 1.2, 2.2, 1.2), family = “sans” )\nradarchart( radar_df, axistype = 1, pcol = colors, pfcol = fills, plwd = 2.4, plty = 1, cglcol = “#d8d5cc”, cglty = 1, cglwd = 0.8, axislabcol = “#77736b”, caxislabels = c(““,”2”, “4”, “6”, “8”, “10”), calcex = 0.78, vlcex = 0.9, vlabels = pillars, title = “Research Radar — Hydrology, Open Data and Uncertainty” )\nlegend( “bottomleft”, legend = paste0(articles\\(code, \"  \", articles\\)status), col = colors, lty = 1, lwd = 2.5, pch = 19, bty = “n”, cex = 0.82, text.col = “#44413c”, pt.cex = 0.9 )\npar(op)\ncat(’\n\nInterpretation\n\n\nMy current research profile is concentrated in surface hydrology, hydrometeorology, statistical hydrology, uncertainty analysis, and hydroinformatics. This reflects a methodological focus on open hydroclimatic datasets, rainfall-runoff modelling, bias correction, gap filling, regional constraints, and reproducible workflows for data-scarce basins.\n\n\nThe radar also shows the boundaries of this research line. Hydrogeology, water quality, and hydroecology are not central components of the studies represented here. This is not a weakness of the individual papers, but a deliberate delimitation of the research program.\n\n’)\ncat(’\n\nArticles included\n\n‘) cat(’\n\n’)\nfor (i in seq_len(nrow(articles))) { doi_text &lt;- if (articles\\(doi[i] == \"\") {\n    \"DOI: —\"\n  } else {\n    paste0(\n      'DOI: &lt;a href=\"https://doi.org/',\n      articles\\)doi[i], ’” target=“_blank”&gt;’, articles$doi[i], “” ) }\ncat( paste0( ’\n\n‘,’\n\n‘,’‘, articles\\(code[i], '&lt;/span&gt;',\n      articles\\)title[i],’\n\n‘,’\n\n‘,’‘, articles\\(status[i], '&lt;/span&gt;',\n      articles\\)venue[i],’ · ‘, doi_text,’\n\n‘,’\n\n’ ) ) }\ncat(’\n\n’)\ncat(’\n\nThematic pillars\n\n‘) cat(’\n\n’)\nfor (i in seq_along(pillar_names)) { cat( paste0( ’\n\n‘,’\n\n‘, pillar_names[i],’\n\n‘,’\n\n‘, pillar_desc[i],’\n\n‘,’\n\n’ ) ) }\ncat(’\n\n’)\ncat(’\n\nScoring logic\n\n\nThe thematic scores range from 0 to 10 and describe the relative emphasis of each article across the eight pillars. A high score means that the pillar is central to the article. A low score means that the pillar is peripheral or absent.\n\n’)\nscore_table &lt;- data.frame( Code = articles$code, Surface = scores[[1]], River = scores[[2]], Hydrogeology = scores[[3]], Hydrometeorology = scores[[4]], Quality = scores[[5]], Management = scores[[6]], Statistics = scores[[7]], Hydroinformatics = scores[[8]] )\ncat(’\n\n‘) cat(’\n’)\nfor (nm in names(score_table)) { cat(paste0(’\n’)) }\ncat(’\n\n‘) cat(’\n’)\nfor (i in seq_len(nrow(score_table))) { cat(’\n\n‘) for (j in seq_len(ncol(score_table))) { cat(paste0(’\n\n‘)) } cat(’\n’) }\ncat(’\n\n\n\n‘, nm,’\n\n\n\n\n‘, score_table[i, j],’\n\n\n\n’)\ncat(’\n\n’)"
   },
   {
-    "objectID": "publications.html#section",
-    "href": "publications.html#section",
-    "title": "Publications",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Research Projects",
     "section": "",
-    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
+    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "projects.html#ongoing-projects",
+    "href": "projects.html#ongoing-projects",
+    "title": "Research Projects",
     "section": "",
-    "text": "B.Sc. in Mechanical Fluids Engineering\nHydrology • Hydraulics • Water Resources\nI am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.\nThis website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.\n\n\n\n\nUnderstanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis.\n\n\n\n\n\nPublished research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
+    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
   },
   {
-    "objectID": "index.html#current-research",
-    "href": "index.html#current-research",
-    "title": "Home",
-    "section": "",
-    "text": "Understanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis."
-  },
-  {
-    "objectID": "index.html#recent-highlights",
-    "href": "index.html#recent-highlights",
-    "title": "Home",
-    "section": "",
-    "text": "Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Technical Notes",
-    "section": "",
-    "text": "This section contains technical notes, tutorials, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science."
-  },
-  {
-    "objectID": "blog.html#tools",
-    "href": "blog.html#tools",
-    "title": "Technical Notes",
-    "section": "Tools",
-    "text": "Tools\n\nAutomated IDF Report Generator in R\nAn open-source workflow developed for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.\nThe toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.\n\nFeatures\n\nFrequency analysis of annual maximum precipitation\nDesign rainfall estimation for multiple return periods\nIDF curve generation\nAutomatic PDF report creation\nReport output in Spanish\n\n\n\nDownload\nDownload IDF Toolkit (ZIP)"
-  },
-  {
-    "objectID": "blog.html#upcoming-notes",
-    "href": "blog.html#upcoming-notes",
-    "title": "Technical Notes",
-    "section": "Upcoming Notes",
-    "text": "Upcoming Notes\n\nIDF Curves in R\nGEV vs Gumbel\nPISCO Precipitation Data\nGR4J Hydrological Modelling\nRainfall–Runoff Analysis\nHydrological Uncertainty\nData Quality Control and Gap Filling ```"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.\nMy research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.\nMy current research explores rainfall–runoff modelling, satellite and gridded precipitation products, extreme event analysis, and the application of statistical and machine learning methods in hydrology.\nThis website serves as a repository of publications, research projects, technical notes and reproducible workflows developed using R, GIS tools and open hydrological datasets."
-  },
-  {
-    "objectID": "about.html#research-interests",
-    "href": "about.html#research-interests",
-    "title": "About",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nHydrology and Water Resources\nHydrological Modelling\nHydrological Frequency Analysis\nExtreme Rainfall and Flood Analysis\nSatellite and Gridded Precipitation Products\nHydrological Uncertainty Assessment\nMachine Learning Applications in Hydrology\nEnvironmental Data Science\nReproducible Research with R and Quarto"
-  },
-  {
-    "objectID": "about.html#professional-profiles",
-    "href": "about.html#professional-profiles",
-    "title": "About",
-    "section": "Professional Profiles",
-    "text": "Professional Profiles\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.\nEmail: jamil_ramirez.m@hotmail.com"
+    "objectID": "projects.html#completed-projects",
+    "href": "projects.html#completed-projects",
+    "title": "Research Projects",
+    "section": "Completed Projects",
+    "text": "Completed Projects\n\nSatellite Precipitation Bias Correction\nBias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.\nStatus: Published (2026) DOI: 10.4995/ia.24476\n\n\nMachine Learning Streamflow Reconstruction\nComparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.\nStatus: Published (2026) DOI: 10.4995/ia.24476"
   },
   {
     "objectID": "CV.html",
@@ -147,24 +91,87 @@
     "text": "GitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Research Projects",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
+    "text": "I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.\nMy research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.\nMy current research explores rainfall–runoff modelling, satellite and gridded precipitation products, extreme event analysis, and the application of statistical and machine learning methods in hydrology.\nThis website serves as a repository of publications, research projects, technical notes and reproducible workflows developed using R, GIS tools and open hydrological datasets."
   },
   {
-    "objectID": "projects.html#ongoing-projects",
-    "href": "projects.html#ongoing-projects",
-    "title": "Research Projects",
-    "section": "",
-    "text": "Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.\nStatus: Ongoing\n\n\n\nAssessment of the reliability of observed and satellite-based precipitation products for rainfall–runoff modelling and extreme event detection in the Cañete River Basin. Multiple calibration scenarios are evaluated using the GR4J model, with special emphasis on reproducing SENAMHI operational alert thresholds and high-flow events.\nStatus: Ongoing\n\n\n\nInvestigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.\nStatus: Ongoing\n\n\n\nAssessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.\nStatus: Ongoing"
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nHydrology and Water Resources\nHydrological Modelling\nHydrological Frequency Analysis\nExtreme Rainfall and Flood Analysis\nSatellite and Gridded Precipitation Products\nHydrological Uncertainty Assessment\nMachine Learning Applications in Hydrology\nEnvironmental Data Science\nReproducible Research with R and Quarto"
   },
   {
-    "objectID": "projects.html#completed-projects",
-    "href": "projects.html#completed-projects",
-    "title": "Research Projects",
-    "section": "Completed Projects",
-    "text": "Completed Projects\n\nSatellite Precipitation Bias Correction\nBias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.\nStatus: Published (2026) DOI: 10.4995/ia.24476\n\n\nMachine Learning Streamflow Reconstruction\nComparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.\nStatus: Published (2026) DOI: 10.4995/ia.24476"
+    "objectID": "about.html#professional-profiles",
+    "href": "about.html#professional-profiles",
+    "title": "About",
+    "section": "Professional Profiles",
+    "text": "Professional Profiles\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.\nEmail: jamil_ramirez.m@hotmail.com"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Technical Notes",
+    "section": "",
+    "text": "This section contains technical notes, tutorials, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science."
+  },
+  {
+    "objectID": "blog.html#tools",
+    "href": "blog.html#tools",
+    "title": "Technical Notes",
+    "section": "Tools",
+    "text": "Tools\n\nAutomated IDF Report Generator in R\nAn open-source workflow developed for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.\nThe toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.\n\nFeatures\n\nFrequency analysis of annual maximum precipitation\nDesign rainfall estimation for multiple return periods\nIDF curve generation\nAutomatic PDF report creation\nReport output in Spanish\n\n\n\nDownload\nDownload IDF Toolkit (ZIP)"
+  },
+  {
+    "objectID": "blog.html#upcoming-notes",
+    "href": "blog.html#upcoming-notes",
+    "title": "Technical Notes",
+    "section": "Upcoming Notes",
+    "text": "Upcoming Notes\n\nIDF Curves in R\nGEV vs Gumbel\nPISCO Precipitation Data\nGR4J Hydrological Modelling\nRainfall–Runoff Analysis\nHydrological Uncertainty\nData Quality Control and Gap Filling ```"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "B.Sc. in Mechanical Fluids Engineering\nHydrology • Hydraulics • Water Resources\nI am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.\nThis website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.\n\n\n\n\nUnderstanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis.\n\n\n\n\n\nPublished research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Home",
+    "section": "",
+    "text": "Understanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.\n\n\n\nAnalysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.\n\n\n\nApplication of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis."
+  },
+  {
+    "objectID": "index.html#recent-highlights",
+    "href": "index.html#recent-highlights",
+    "title": "Home",
+    "section": "",
+    "text": "Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.\nPublished comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.\nOngoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
+  },
+  {
+    "objectID": "publications.html#section",
+    "href": "publications.html#section",
+    "title": "Publications",
+    "section": "",
+    "text": "Ramirez, J. I., & Berrocal, B. F.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nRamirez, J. I., & Berrocal, B. F.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02"
   }
 ]
