@@ -9,6 +9,8 @@ website:
       text: Home
     - href: publications.qmd
       text: Publications
+    - href: research-radar.qmd
+      text: Research Radar
     - href: projects.qmd
       text: Projects
     - href: blog.qmd
