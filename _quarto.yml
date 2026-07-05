@@ -10,7 +10,7 @@ website:
     - href: publications.qmd
       text: Publications
     - href: research-radar.qmd
-      text: Research Radar
+      text: Radar
     - href: projects.qmd
       text: Projects
     - href: blog.qmd
