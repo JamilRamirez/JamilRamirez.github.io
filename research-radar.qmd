@@ -156,8 +156,8 @@ a {
 articles <- data.frame(
   code = paste0("A", 1:7),
   title = c(
-    "Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú",
-    "Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura",
+    "Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins",
+    "Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru",
     "Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability",
     "Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets",
     "Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes",

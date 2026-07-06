@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis. 
+I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.
 
 My research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.
 
@@ -30,7 +30,6 @@ This website serves as a repository of publications, research projects, technica
 
 ## Contact
 
-For research collaborations, academic inquiries or professional opportunities, 
-feel free to connect through the professional profiles listed above.
+For research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.
 
-**Email:** [jamil_ramirez.m@hotmail.com](mailto:jamil_ramirez.m@hotmail.com)
+**Email:** [jamil_ramirez.m\@hotmail.com](mailto:jamil_ramirez.m@hotmail.com)

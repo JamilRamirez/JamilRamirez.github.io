@@ -12,16 +12,16 @@ Mechanical Fluids Engineering Graduate with experience in hydrology, hydraulics 
 
 ## Education
 
-**National University of San Marcos (UNMSM)**  
-B.Sc. in Mechanical Fluids Engineering  
-Lima, Peru  
+**National University of San Marcos (UNMSM)**\
+B.Sc. in Mechanical Fluids Engineering\
+Lima, Peru\
 2022
 
 ## Professional Experience
 
 ### Consorcio Irrigar E.I.R.L.
 
-**Engineering Assistant**  
+**Engineering Assistant**\
 December 2022 – Present
 
 - Support hydrological and hydraulic studies for water resources projects.
@@ -31,7 +31,7 @@ December 2022 – Present
 
 ### Geodata and Science S.A.C.
 
-**GIS and Database Assistant**  
+**GIS and Database Assistant**\
 September 2021 – December 2021
 
 - Conducted field data collection and survey activities.
@@ -51,7 +51,7 @@ Berrocal, B. F., & Ramirez, J. I. (2026).
 
 DOI: https://doi.org/10.4995/ia.24476
 
----
+------------------------------------------------------------------------
 
 Berrocal, B., & Ramirez, J. (2026).
 

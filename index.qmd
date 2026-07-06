@@ -28,6 +28,6 @@ Application of statistical and machine learning methods to streamflow reconstruc
 
 ## Recent Highlights
 
-* Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.
-* Published comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.
-* Ongoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty.
+- Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.
+- Published comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.
+- Ongoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty.
