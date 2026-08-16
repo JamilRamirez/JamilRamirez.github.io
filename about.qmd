@@ -22,11 +22,12 @@ This website serves as a repository of publications, research projects, technica
 - Environmental Data Science
 - Reproducible Research with R and Quarto
 
-## Professional Profiles
+## Academic Profiles
 
 - ORCID: <https://orcid.org/0009-0009-3386-8571>
-- GitHub: <https://github.com/JamilRamirez>
-- LinkedIn: <https://www.linkedin.com/in/jamil-r-762098b1/>
+- Google Scholar: <https://scholar.google.com/citations?user=W69TP6QAAAAJ>
+- ResearchGate: <https://www.researchgate.net/profile/Jamil-Ramirez>
+- Zenodo: <https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Ramirez%20Mu%C3%B1oz%2C%20Jamil%20Isaac%22&l=list&p=1&s=10&sort=bestmatch>
 
 ## Contact
 

@@ -14,20 +14,14 @@ This website provides access to my publications, research projects, technical no
 
 ## Current Research
 
-### Hydrological Uncertainty
+### Bayesian Hydrology
 
-Understanding how data limitations, modelling assumptions and methodological choices influence hydrological predictions and water resources assessments.
-
-### Extreme Events and Design Hydrology
-
-Analysis of extreme rainfall, flood-generating processes and uncertainty in Intensity–Duration–Frequency (IDF) estimation for data-scarce basins.
-
-### Data-Driven Hydrology
-
-Application of statistical and machine learning methods to streamflow reconstruction, rainfall–runoff modelling and environmental data analysis.
+Development of Bayesian approaches for hydrological prediction using rolling observational windows, hydroclimatic predictors and temporal information to evaluate how changing data availability influences predictive uncertainty and model performance.
 
 ## Recent Highlights
 
-- Published research on satellite precipitation bias correction and frequency analysis in the Piura River Basin.
-- Published comparative study of traditional and machine learning methods for daily streamflow infilling in Peruvian basins.
-- Ongoing research on IDF uncertainty propagation, rainfall–runoff modelling in the Cañete River Basin and hydrological data uncertainty.
+- Published research on bias correction and frequency analysis of satellite precipitation in the Piura River Basin.
+- Published comparative research on traditional and machine learning methods for daily streamflow infilling in representative Peruvian basins.
+- Published research on bias-corrected precipitation products and parameter transferability in a data-scarce Andean basin.
+- Ongoing research on rainfall–runoff modelling and hydrological uncertainty in the Cañete River Basin.
+- Ongoing research on Bayesian hydrological prediction using rolling observational windows and hydroclimatic information.

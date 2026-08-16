@@ -4,9 +4,9 @@ title: "Research Projects"
 
 ## Ongoing Projects
 
-### Malanche Catchment
+### Bayesian Hydrological Prediction
 
-Assessment of uncertainty in indirect Intensity-Duration-Frequency (IDF) estimation and its propagation into peak discharge calculations in an ungauged hyperarid coastal basin of Peru.
+Development of a Bayesian framework to evaluate how the temporal position and length of observational records influence hydrological prediction. The study uses rolling training windows, hydroclimatic predictors and retrospective experiments to distinguish the effects of record length from changes in hydroclimatic conditions.
 
 **Status:** Ongoing
 
@@ -16,28 +16,28 @@ Assessment of the reliability of observed and satellite-based precipitation prod
 
 **Status:** Ongoing
 
-### Streamflow Gap-Filling Uncertainty
-
-Investigation of how uncertainty introduced by streamflow gap-filling methods propagates into annual water resources indicators. The study compares multiple reconstruction approaches across representative Peruvian basins and evaluates whether strong daily performance translates into reliable estimates of annual flow and water availability.
-
-**Status:** Ongoing
-
-### Precipitation-Only Streamflow Modelling
-
-Assessment of whether precipitation alone is sufficient to reproduce streamflow dynamics in Andean basins with contrasting hydrological controls. Using machine learning models and multiple precipitation datasets, the study investigates the ability of data-driven approaches to represent average conditions and extreme flows under ENSO-driven and glacier-influenced regimes.
-
-**Status:** Ongoing
 
 ## Completed Projects
+
+### Bias-Corrected Precipitation Products in an Andean Basin
+
+Evaluation of bias-correction methods for satellite and reanalysis precipitation products in a data-scarce Andean basin, including assessment of hydrological performance and the transferability of calibrated model parameters.
+
+**Status:** Published (2026)  
+[DOI: 10.1590/2318-0331.402620260025](https://doi.org/10.1590/2318-0331.402620260025)
+
 
 ### Satellite Precipitation Bias Correction
 
 Bias correction and statistical transfer of satellite-derived annual maximum precipitation series for frequency analysis and extreme rainfall assessment in the Piura River Basin.
 
-**Status:** Published (2026) [DOI: 10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
+**Status:** Published (2026)  
+[DOI: 10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
+
 
 ### Machine Learning Streamflow Reconstruction
 
 Comparative evaluation of traditional statistical methods and machine learning algorithms for daily streamflow infilling in representative Peruvian river basins.
 
-**Status:** Published (2026) [DOI: 10.4995/ia.24476](https://doi.org/10.24850/j-tyca-18-02-02)
+**Status:** Published (2026)  
+[DOI: 10.24850/j-tyca-18-02-02](https://doi.org/10.24850/j-tyca-18-02-02)

@@ -2,13 +2,13 @@
 title: "Technical Notes"
 ---
 
-This section contains technical notes, tutorials, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science.
+This section contains technical notes, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science.
 
 ## Tools
 
 ### Automated IDF Report Generator in R
 
-An open-source workflow developed for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.
+An open-source workflow for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.
 
 The toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.
 
@@ -24,12 +24,45 @@ The toolkit includes an R script, an R Markdown template, example files and docu
 
 [Download IDF Toolkit (ZIP)](/downloads/IDF_Toolkit.zip)
 
-## Upcoming Notes
 
-- IDF Curves in R
-- GEV vs Gumbel
-- PISCO Precipitation Data
-- GR4J Hydrological Modelling
-- Rainfall–Runoff Analysis
-- Hydrological Uncertainty
-- Data Quality Control and Gap Filling \`\`\`
+### ANA Hydrometeorological Station Auditor
+
+A reproducible workflow for auditing the national hydrometeorological station inventory of the Peruvian National Water Authority (ANA).
+
+The tool is designed to explore hydrometric and pluviometric stations across Peruvian basins and evaluate the temporal availability and completeness of their observational records.
+
+#### Features
+
+- Basin-by-basin exploration of ANA stations
+- Hydrometric and pluviometric station inventories
+- Identification of first and last available observations
+- Record completeness assessment
+- Evaluation of common observational periods
+- Detection of missing-data patterns and long data gaps
+- Support for screening stations for hydrological research
+
+The project is intended to provide a transparent first-stage audit before downloading and processing large observational datasets.
+
+
+### FABDEM Catchment Delineator v1.2
+
+A reproducible catchment delineation workflow based on the 30 m FABDEM digital elevation model.
+
+The tool is designed to generate watershed boundaries from user-defined outlet locations while handling the underlying DEM coverage and preprocessing required for hydrological terrain analysis.
+
+#### Features
+
+- Catchment delineation from outlet points
+- FABDEM 30 m terrain data
+- Automated DEM tile identification
+- Processing of multi-tile catchments
+- Hydrologically consistent terrain preprocessing
+- Support for Peruvian and transboundary basins
+- Reproducible GIS outputs for subsequent hydrological analysis
+
+
+## Reproducible Research
+
+Code, datasets, supplementary material and reproducibility packages associated with my research and technical developments are also archived on Zenodo.
+
+[Browse my Zenodo records](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Ramirez%20Mu%C3%B1oz%2C%20Jamil%20Isaac%22&l=list&p=1&s=10&sort=newest)

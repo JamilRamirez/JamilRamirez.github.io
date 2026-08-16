@@ -6,7 +6,7 @@ title: "Publications"
 
 ### Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru
 
-**Ramirez, J. I., & Berrocal, B. F.**
+**Berrocal, B. F. & Ramirez, J. I.**
 
 *Ingeniería del Agua*
 
@@ -14,8 +14,16 @@ DOI: [10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
 
 ### Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins
 
-**Ramirez, J. I., & Berrocal, B. F.**
+**Berrocal, B. F. & Ramirez, J. I.**
 
 *Tecnología y Ciencias del Agua*
 
 DOI: [10.24850/j-tyca-18-02-02](https://doi.org/10.24850/j-tyca-18-02-02)
+
+### Bias-corrected precipitation products in a data-scarce Andean basin: performance and parameter transferability. 
+
+**Berrocal, B. F. & Ramirez, J. I.** 
+
+*RBRH – Revista Brasileira de Recursos Hídricos*
+
+DOI: [10.1590/2318-0331.402620260025](https://doi.org/10.1590/2318-0331.402620260025)

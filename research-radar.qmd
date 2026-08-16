@@ -154,19 +154,27 @@ a {
 
 ```{r}
 articles <- data.frame(
-  code = paste0("A", 1:7),
+  code = paste0("A", 1:11),
   title = c(
     "Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins",
     "Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru",
     "Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability",
     "Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets",
-    "Structural limitations of precipitation-only streamflow modelling in Andean basins under ENSO-driven and glacier-influenced regimes",
+    "Effects of precipitation memory and state information on machine-learning streamflow modelling in two Andean basins",
     "Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins",
-    "GLUE-Limits of Acceptability Framework for Rainfall-Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation"
+    "GLUE-Limits of Acceptability Framework for Rainfall-Runoff Simulation in an Ungauged Arid Catchment: Regional Constraints and Precipitation-Product Evaluation",
+    "Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins",
+    "Component-dependent generalization of daily streamflow products under an external tropical-Andean benchmark",
+    "Hydroclimatic non-equivalence among major El Niño events along the Peruvian Pacific drainage: implications for historical-analogue transferability",
+    "Temporal robustness of Thomas–Fiering stochastic streamflow generation under expanding observational records"
   ),
   status = c(
     "Published",
     "Published",
+    "Published",
+    "Manuscript",
+    "Manuscript",
+    "Manuscript",
     "Manuscript",
     "Manuscript",
     "Manuscript",
@@ -180,11 +188,19 @@ articles <- data.frame(
     "Revista Facultad de Ingeniería Universidad de Antioquia",
     "Hydrological Sciences Journal",
     "Water Resources Management",
-    "Journal of Hydrologic Engineering"
+    "Journal of Hydrologic Engineering",
+    "South Sustainability",
+    "Journal of Hydrology",
+    "International Journal of Climatology",
+    "Environmental Modeling & Assessment"
   ),
   doi = c(
     "10.24850/j-tyca-18-02-02",
     "10.4995/ia.24476",
+    "10.1590/2318-0331.402620260025",
+    "",
+    "",
+    "",
     "",
     "",
     "",
@@ -228,26 +244,54 @@ pillar_desc <- c(
 )
 
 scores <- data.frame(
-  surface_hydrology = c(9, 8, 6, 8, 9, 9, 10),
-  river_hydraulics = c(1, 1, 1, 3, 2, 1, 2),
-  hydrogeology = c(0, 0, 0, 0, 0, 0, 0),
-  hydrometeorology = c(4, 9, 9, 9, 8, 3, 7),
-  water_quality = c(0, 0, 0, 0, 0, 0, 0),
-  water_management = c(5, 4, 5, 6, 5, 9, 6),
-  statistical_hydrology = c(9, 8, 8, 9, 8, 9, 8),
-  remote_sensing_hydroinformatics = c(8, 9, 9, 8, 9, 6, 8)
+  surface_hydrology = c(
+    9, 8, 6, 8, 9, 9, 10,
+    5, 10, 9, 9
+  ),
+  river_hydraulics = c(
+    1, 1, 1, 3, 1, 1, 2,
+    0, 2, 2, 0
+  ),
+  hydrogeology = c(
+    0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0
+  ),
+  hydrometeorology = c(
+    4, 9, 9, 9, 9, 3, 7,
+    10, 4, 10, 3
+  ),
+  water_quality = c(
+    0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0
+  ),
+  water_management = c(
+    5, 4, 5, 6, 3, 9, 6,
+    4, 5, 4, 7
+  ),
+  statistical_hydrology = c(
+    9, 8, 8, 9, 9, 9, 8,
+    9, 9, 9, 10
+  ),
+  remote_sensing_hydroinformatics = c(
+    8, 9, 9, 8, 9, 6, 8,
+    9, 10, 9, 6
+  )
 )
 
 colnames(scores) <- pillars
 
 colors <- c(
-  "#2E86E8",
-  "#1DAF8A",
-  "#E85A30",
-  "#9B59B6",
-  "#E67E22",
-  "#E91E8C",
-  "#27AE60"
+  "#2E86E8",  # A1
+  "#1DAF8A",  # A2
+  "#E85A30",  # A3
+  "#9B59B6",  # A4
+  "#E67E22",  # A5
+  "#E91E8C",  # A6
+  "#27AE60",  # A7
+  "#34495E",  # A8
+  "#C0392B",  # A9
+  "#16A085",  # A10
+  "#7D3C98"   # A11
 )
 ```
 
@@ -257,15 +301,65 @@ This radar summarizes the thematic orientation of my research work. Scores do no
 </div>
 ```
 
-## Research profile
+## Average research profile
+
+```{r}
+#| fig-width: 8
+#| fig-height: 6.2
+#| fig-align: center
+#| out-width: "90%"
+
+library(fmsb)
+
+mean_scores <- colMeans(scores)
+
+mean_radar_df <- rbind(
+  rep(10, length(pillars)),
+  rep(0, length(pillars)),
+  mean_scores
+)
+
+colnames(mean_radar_df) <- pillars
+
+mean_color <- "#173F73"
+mean_fill <- adjustcolor(mean_color, alpha.f = 0.18)
+
+op <- par(
+  bg = "#f7f6f2",
+  mar = c(0.8, 0.8, 2.0, 0.8),
+  family = "sans"
+)
+
+radarchart(
+  mean_radar_df,
+  axistype = 1,
+  pcol = mean_color,
+  pfcol = mean_fill,
+  plwd = 3,
+  plty = 1,
+  cglcol = "#d8d5cc",
+  cglty = 1,
+  cglwd = 0.8,
+  axislabcol = "#77736b",
+  caxislabels = c("", "2", "4", "6", "8", "10"),
+  calcex = 0.72,
+  vlcex = 0.82,
+  vlabels = pillars,
+  title = "Average Research Profile"
+)
+
+par(op)
+```
+
+The average profile across the 11 studies shows a strong concentration in statistical hydrology, surface hydrology, hydroinformatics, and hydrometeorology, with water-resources implications forming a secondary axis.
+
+## Individual research profiles
 
 ```{r}
 #| fig-width: 9
 #| fig-height: 6.6
 #| fig-align: center
 #| out-width: "95%"
-
-library(fmsb)
 
 fills <- adjustcolor(colors, alpha.f = 0.13)
 
@@ -296,7 +390,7 @@ radarchart(
   calcex = 0.72,
   vlcex = 0.78,
   vlabels = pillars,
-  title = "Research Radar - Hydrology, Open Data and Uncertainty"
+  title = "Individual Research Profiles"
 )
 
 legend(
