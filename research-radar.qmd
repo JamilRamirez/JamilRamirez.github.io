@@ -313,13 +313,16 @@ library(fmsb)
 
 mean_scores <- colMeans(scores)
 
-mean_radar_df <- rbind(
-  rep(10, length(pillars)),
-  rep(0, length(pillars)),
-  mean_scores
+mean_radar_df <- as.data.frame(
+  rbind(
+    rep(10, ncol(scores)),
+    rep(0, ncol(scores)),
+    mean_scores
+  )
 )
 
-colnames(mean_radar_df) <- pillars
+colnames(mean_radar_df) <- colnames(scores)
+rownames(mean_radar_df) <- c("Maximum", "Minimum", "Average")
 
 mean_color <- "#173F73"
 mean_fill <- adjustcolor(mean_color, alpha.f = 0.18)
@@ -330,26 +333,30 @@ op <- par(
   family = "sans"
 )
 
-radarchart(
-  mean_radar_df,
-  axistype = 1,
-  pcol = mean_color,
-  pfcol = mean_fill,
-  plwd = 3,
-  plty = 1,
-  cglcol = "#d8d5cc",
-  cglty = 1,
-  cglwd = 0.8,
-  axislabcol = "#77736b",
-  caxislabels = c("", "2", "4", "6", "8", "10"),
-  calcex = 0.72,
-  vlcex = 0.82,
-  vlabels = pillars,
-  title = "Average Research Profile"
+invisible(
+  radarchart(
+    mean_radar_df,
+    axistype = 1,
+    pcol = mean_color,
+    pfcol = mean_fill,
+    plwd = 3,
+    plty = 1,
+    cglcol = "#d8d5cc",
+    cglty = 1,
+    cglwd = 0.8,
+    axislabcol = "#77736b",
+    caxislabels = c("", "2", "4", "6", "8", "10"),
+    calcex = 0.72,
+    vlcex = 0.82,
+    vlabels = pillars,
+    title = "Average Research Profile"
+  )
 )
 
 par(op)
 ```
+
+The average profile across the 11 studies shows a strong concentration in statistical hydrology, surface hydrology, hydroinformatics, and hydrometeorology, with water-resources implications forming a secondary axis.
 
 The average profile across the 11 studies shows a strong concentration in statistical hydrology, surface hydrology, hydroinformatics, and hydrometeorology, with water-resources implications forming a secondary axis.
 
