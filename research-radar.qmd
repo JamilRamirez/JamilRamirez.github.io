@@ -358,8 +358,6 @@ par(op)
 
 The average profile across the 11 studies shows a strong concentration in statistical hydrology, surface hydrology, hydroinformatics, and hydrometeorology, with water-resources implications forming a secondary axis.
 
-The average profile across the 11 studies shows a strong concentration in statistical hydrology, surface hydrology, hydroinformatics, and hydrometeorology, with water-resources implications forming a secondary axis.
-
 ## Individual research profiles
 
 ```{r}
