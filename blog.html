@@ -139,8 +139,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tools" id="toc-tools" class="nav-link active" data-scroll-target="#tools">Tools</a>
   <ul class="collapse">
   <li><a href="#automated-idf-report-generator-in-r" id="toc-automated-idf-report-generator-in-r" class="nav-link" data-scroll-target="#automated-idf-report-generator-in-r">Automated IDF Report Generator in R</a></li>
+  <li><a href="#ana-hydrometeorological-station-auditor" id="toc-ana-hydrometeorological-station-auditor" class="nav-link" data-scroll-target="#ana-hydrometeorological-station-auditor">ANA Hydrometeorological Station Auditor</a></li>
+  <li><a href="#fabdem-catchment-delineator-v1.2" id="toc-fabdem-catchment-delineator-v1.2" class="nav-link" data-scroll-target="#fabdem-catchment-delineator-v1.2">FABDEM Catchment Delineator v1.2</a></li>
   </ul></li>
-  <li><a href="#upcoming-notes" id="toc-upcoming-notes" class="nav-link" data-scroll-target="#upcoming-notes">Upcoming Notes</a></li>
+  <li><a href="#reproducible-research" id="toc-reproducible-research" class="nav-link" data-scroll-target="#reproducible-research">Reproducible Research</a></li>
   </ul>
 </nav>
     </div>
@@ -166,12 +168,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This section contains technical notes, tutorials, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science.</p>
+<p>This section contains technical notes, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science.</p>
 <section id="tools" class="level2">
 <h2 class="anchored" data-anchor-id="tools">Tools</h2>
 <section id="automated-idf-report-generator-in-r" class="level3">
 <h3 class="anchored" data-anchor-id="automated-idf-report-generator-in-r">Automated IDF Report Generator in R</h3>
-<p>An open-source workflow developed for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.</p>
+<p>An open-source workflow for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.</p>
 <p>The toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.</p>
 <section id="features" class="level4">
 <h4 class="anchored" data-anchor-id="features">Features</h4>
@@ -188,18 +190,46 @@ ul.task-list li input[type="checkbox"] {
 <p><a href=".\downloads/IDF_Toolkit.zip">Download IDF Toolkit (ZIP)</a></p>
 </section>
 </section>
-</section>
-<section id="upcoming-notes" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-notes">Upcoming Notes</h2>
+<section id="ana-hydrometeorological-station-auditor" class="level3">
+<h3 class="anchored" data-anchor-id="ana-hydrometeorological-station-auditor">ANA Hydrometeorological Station Auditor</h3>
+<p>A reproducible workflow for auditing the national hydrometeorological station inventory of the Peruvian National Water Authority (ANA).</p>
+<p>The tool is designed to explore hydrometric and pluviometric stations across Peruvian basins and evaluate the temporal availability and completeness of their observational records.</p>
+<section id="features-1" class="level4">
+<h4 class="anchored" data-anchor-id="features-1">Features</h4>
 <ul>
-<li>IDF Curves in R</li>
-<li>GEV vs Gumbel</li>
-<li>PISCO Precipitation Data</li>
-<li>GR4J Hydrological Modelling</li>
-<li>Rainfall–Runoff Analysis</li>
-<li>Hydrological Uncertainty</li>
-<li>Data Quality Control and Gap Filling ```</li>
+<li>Basin-by-basin exploration of ANA stations</li>
+<li>Hydrometric and pluviometric station inventories</li>
+<li>Identification of first and last available observations</li>
+<li>Record completeness assessment</li>
+<li>Evaluation of common observational periods</li>
+<li>Detection of missing-data patterns and long data gaps</li>
+<li>Support for screening stations for hydrological research</li>
 </ul>
+<p>The project is intended to provide a transparent first-stage audit before downloading and processing large observational datasets.</p>
+</section>
+</section>
+<section id="fabdem-catchment-delineator-v1.2" class="level3">
+<h3 class="anchored" data-anchor-id="fabdem-catchment-delineator-v1.2">FABDEM Catchment Delineator v1.2</h3>
+<p>A reproducible catchment delineation workflow based on the 30 m FABDEM digital elevation model.</p>
+<p>The tool is designed to generate watershed boundaries from user-defined outlet locations while handling the underlying DEM coverage and preprocessing required for hydrological terrain analysis.</p>
+<section id="features-2" class="level4">
+<h4 class="anchored" data-anchor-id="features-2">Features</h4>
+<ul>
+<li>Catchment delineation from outlet points</li>
+<li>FABDEM 30 m terrain data</li>
+<li>Automated DEM tile identification</li>
+<li>Processing of multi-tile catchments</li>
+<li>Hydrologically consistent terrain preprocessing</li>
+<li>Support for Peruvian and transboundary basins</li>
+<li>Reproducible GIS outputs for subsequent hydrological analysis</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="reproducible-research" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible-research">Reproducible Research</h2>
+<p>Code, datasets, supplementary material and reproducibility packages associated with my research and technical developments are also archived on Zenodo.</p>
+<p><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Ramirez%20Mu%C3%B1oz%2C%20Jamil%20Isaac%22&amp;l=list&amp;p=1&amp;s=10&amp;sort=newest">Browse my Zenodo records</a></p>
 
 
 </section>
