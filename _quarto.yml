@@ -19,6 +19,8 @@ website:
       text: CV
     - href: about.qmd
       text: About
+  page-footer:
+    center: "© 2026 Jamil Ramirez. Content and code subject to their respective licenses."
 
 format:
   html:
