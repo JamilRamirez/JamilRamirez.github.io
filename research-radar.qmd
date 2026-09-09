@@ -296,6 +296,7 @@ Each article is the unit of analysis. Its thematic profile is stored with the ar
 #| fig-height: 6.2
 #| fig-align: center
 #| out-width: "90%"
+#| fig-alt: "Radar chart summarizing the average thematic profile of the research portfolio across eight hydrology and water-resources domains."
 
 library(fmsb)
 
