@@ -12,16 +12,16 @@ I am a Peruvian researcher working in hydrology, hydraulics and environmental da
 
 ## Research portfolio · November 2026
 
-**14 active articles · 4 published · 9 in review · 1 submitted**
+**14 research articles · 4 published**
 
-The portfolio covers hydrological prediction, extreme rainfall, satellite and gridded precipitation, hydroclimatic variability, uncertainty and regionalization. The count excludes one previously rejected manuscript (A-015), which remains in the private editorial history.
+The portfolio covers hydrological prediction, extreme rainfall, satellite and gridded precipitation, hydroclimatic variability, uncertainty and regionalization.
 
-[Explore published articles](publications.qmd) · [Research radar and editorial status](research-radar.qmd)
+[Explore published articles](publications.qmd) · [Research radar](research-radar.qmd)
 
 ## Recent highlights
 
 - Four peer-reviewed articles published in 2026 in *Ingeniería del Agua*, *Tecnología y ciencias del agua*, *RBRH* and *South Sustainability*.
-- Research under editorial evaluation at *Hydrological Sciences Journal*, *Hydrological Processes*, *Water Resources Management*, *International Journal of Climatology*, *Theoretical and Applied Climatology*, *Water Science*, *RBRH* and other journals.
+- Studies covering hydrological uncertainty, catchment similarity, streamflow reconstruction and climate variability.
 - Open hydrometeorological station-selection tools and reproducible research workflows available through GitHub and Zenodo.
 
 ## Research and tools

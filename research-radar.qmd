@@ -1,88 +1,428 @@
 ---
 title: "Research Radar"
-subtitle: "Hydrology, open data and uncertainty"
+subtitle: "Hydrology, Open Data and Uncertainty"
+format:
+  html:
+    toc: true
+    toc-location: right
+    page-layout: article
+execute:
+  warning: false
+  message: false
+  echo: false
 ---
 
-## Research portfolio
+```{=html}
+<style>
+body {
+  background: #f7f6f2;
+  color: #1f1f1c;
+}
 
-**14 active articles · 4 published · 9 in review · 1 submitted**
+.quarto-title-banner {
+  background: #f7f6f2;
+  color: #1f1f1c;
+  border-bottom: 1px solid #d8d5cc;
+}
 
-Editorial statuses are reported as recorded on 1 November 2026. *Under review* does not necessarily mean that external referees have been assigned. The rejected A-015 manuscript is not included in the active portfolio.
+.quarto-title h1.title {
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
 
-## Articles and journal destinations
+.subtitle {
+  color: #6f6b63;
+}
 
-### A-001 · Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura
+.note-box {
+  margin: 1.5rem 0 2rem 0;
+  padding: 1rem 1.2rem;
+  background: #eeece7;
+  border: 1px solid #d8d5cc;
+  border-radius: 12px;
+  color: #5f5b54;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
 
-**Journal:** *Ingeniería del Agua*  
-**Editorial status:** Published
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 
-### A-002 · Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú
+.article-card {
+  background: #fbfaf7;
+  border: 1px solid #d8d5cc;
+  border-left: 5px solid #2E86E8;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 1.05rem 1.1rem;
+}
 
-**Journal:** *Tecnología y ciencias del agua*  
-**Editorial status:** Published
+.article-title {
+  font-weight: 680;
+  line-height: 1.38;
+}
 
-### A-003 · Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability
+.article-code {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.78rem;
+  font-weight: 750;
+  color: white;
+  background: #2E86E8;
+  padding: 0.16rem 0.42rem;
+  border-radius: 5px;
+  margin-right: 0.45rem;
+}
 
-**Journal:** *RBRH – Revista Brasileira de Recursos Hídricos*  
-**Editorial status:** Published
+.article-meta {
+  margin-top: 0.42rem;
+  color: #6f6b63;
+  font-size: 0.9rem;
+}
 
-### A-004 · Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets
+.badge {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #d8d5cc;
+  background: #eeece7;
+  color: #5f5b54;
+  margin-right: 0.35rem;
+}
 
-**Journal:** *Revista Facultad de Ingeniería Universidad de Antioquia*  
-**Editorial status:** Editorial assessment; external review unconfirmed
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.48rem 0.9rem;
+  margin-top: 0.9rem;
+}
 
-### A-005 · Effects of precipitation memory and state information on machine-learning streamflow modelling in two Andean basins
+.profile-row {
+  display: grid;
+  grid-template-columns: minmax(115px, 1fr) 2fr 24px;
+  gap: 0.45rem;
+  align-items: center;
+}
 
-**Journal:** *Hydrological Sciences Journal*  
-**Editorial status:** R2 submitted; decision pending
+.profile-label {
+  color: #5f5b54;
+  font-size: 0.78rem;
+  line-height: 1.15;
+}
 
-### A-006 · Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins
+.profile-track {
+  height: 6px;
+  background: #e5e2da;
+  border-radius: 999px;
+  overflow: hidden;
+}
 
-**Journal:** *Water Resources Management*  
-**Editorial status:** Under review
+.profile-fill {
+  height: 100%;
+  border-radius: 999px;
+}
 
-### A-007 · When do regional hydrological constraints add predictive value without local streamflow?
+.profile-score {
+  text-align: right;
+  color: #6f6b63;
+  font-family: monospace;
+  font-size: 0.77rem;
+  font-weight: 700;
+}
 
-**Journal:** *Hydrological Processes*  
-**Editorial status:** Under review
+.topics {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: #6f6b63;
+}
 
-### A-008 · Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins
+.topic-chip {
+  display: inline-block;
+  margin: 0.18rem 0.22rem 0 0;
+  padding: 0.16rem 0.42rem;
+  border-radius: 999px;
+  border: 1px solid #d8d5cc;
+  background: #f2f0eb;
+}
 
-**Journal:** *South Sustainability*  
-**Editorial status:** Published
+a {
+  color: #2E86E8;
+}
+</style>
+```
 
-### A-009 · Hydroclimatic non-equivalence among major El Niño events along the Peruvian Pacific drainage: implications for historical-analogue transferability
+```{r}
+articles <- data.frame(
+  code = sprintf("A-%03d", 1:14),
+  title = c(
+    "Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura",
+    "Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú",
+    "Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability",
+    "Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets",
+    "Effects of precipitation memory and state information on machine-learning streamflow modelling in two Andean basins",
+    "Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins",
+    "When do regional hydrological constraints add predictive value without local streamflow?",
+    "Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins",
+    "Hydroclimatic non-equivalence among major El Niño events along the Peruvian Pacific drainage: implications for historical-analogue transferability",
+    "Do persistent climatic patterns along flow paths improve prediction of streamflow-regime differences?",
+    "Robustness of Comparative High-Flow Performance Across Global Streamflow Products",
+    "Dry-season flow retention across contrasting climatic regimes in Chilean catchments",
+    "Temporal revision of extreme-rainfall return levels under expanding observational records: limits of hydroclimatic transferability",
+    "Partitioning Methodological Uncertainty in Indirect IDF Estimation from Daily Gridded Precipitation: Evidence from Torrential Catchments in Western Peru"
+  ),
+  status = c(
+    "Published",
+    "Published",
+    "Published",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Published",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published",
+    "Not published"
+  ),
+  venue = c(
+    "Ingeniería del Agua",
+    "Tecnología y ciencias del agua",
+    "RBRH – Revista Brasileira de Recursos Hídricos",
+    "Revista Facultad de Ingeniería Universidad de Antioquia",
+    "Hydrological Sciences Journal",
+    "Water Resources Management",
+    "Hydrological Processes",
+    "South Sustainability",
+    "International Journal of Climatology",
+    "Hydrological Sciences Journal",
+    "Water Science",
+    "South Sustainability",
+    "Theoretical and Applied Climatology",
+    "RBRH – Revista Brasileira de Recursos Hídricos"
+  ),
+  doi = c(
+    "10.4995/ia.24476",
+    "10.24850/j-tyca-18-02-02",
+    "10.1590/2318-0331.402620260025",
+    "",
+    "",
+    "",
+    "",
+    "10.21142/SS-0702-2026-e174",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ),
+  surface_hydrology = c(8, 9, 6, 8, 9, 9, 10, 5, 9, 10, 9, 9, 5, 8),
+  river_hydraulics = c(1, 1, 1, 3, 1, 1, 1, 0, 1, 0, 1, 0, 0, 2),
+  hydrogeology = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  hydrometeorology = c(9, 4, 9, 9, 9, 3, 7, 10, 10, 9, 4, 7, 10, 10),
+  water_quality = c(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  water_management = c(4, 5, 5, 6, 3, 9, 5, 4, 5, 4, 3, 6, 4, 6),
+  statistical_hydrology = c(8, 9, 8, 9, 9, 9, 9, 9, 9, 10, 10, 9, 10, 10),
+  remote_sensing_hydroinformatics = c(9, 8, 9, 8, 9, 6, 7, 9, 8, 9, 10, 7, 5, 9),
+  stringsAsFactors = FALSE
+)
 
-**Journal:** *International Journal of Climatology*  
-**Editorial status:** Under review
+stopifnot(nrow(articles) == 14L, sum(articles$status == "Published") == 4L)
 
-### A-010 · Do persistent climatic patterns along flow paths improve prediction of streamflow-regime differences?
+score_cols <- c(
+  "surface_hydrology",
+  "river_hydraulics",
+  "hydrogeology",
+  "hydrometeorology",
+  "water_quality",
+  "water_management",
+  "statistical_hydrology",
+  "remote_sensing_hydroinformatics"
+)
 
-**Journal:** *Hydrological Sciences Journal*  
-**Editorial status:** Submitted; external review unconfirmed
+pillar_names <- c(
+  "Surface hydrology",
+  "River hydraulics",
+  "Hydrogeology",
+  "Hydrometeorology",
+  "Water quality",
+  "Water management",
+  "Statistical hydrology",
+  "Remote sensing / Hydroinformatics"
+)
 
-### A-011 · Robustness of Comparative High-Flow Performance Across Global Streamflow Products
+radar_labels <- c(
+  "Surface\nhydrology",
+  "River\nhydraulics",
+  "Hydrogeology",
+  "Hydrometeorology",
+  "Water\nquality",
+  "Water\nmanagement",
+  "Statistical\nhydrology",
+  "Remote sensing /\nHydroinformatics"
+)
 
-**Journal:** *Water Science*  
-**Editorial status:** Revision submitted; decision pending
+colors <- c(
+  "#2E86E8", "#1DAF8A", "#E85A30", "#9B59B6", "#E67E22",
+  "#E91E8C", "#27AE60", "#34495E", "#C0392B", "#16A085",
+  "#7D3C98", "#6C5CE7", "#8E6E53", "#247C88"
+)
 
-### A-012 · Dry-season flow retention across contrasting climatic regimes in Chilean catchments
+scores <- articles[, score_cols, drop = FALSE]
+colnames(scores) <- radar_labels
+```
 
-**Journal:** *South Sustainability*  
-**Editorial status:** Sent for peer review; reviewers not confirmed
+```{=html}
+<div class="note-box">
+Each article is the unit of analysis. Its thematic profile is stored with the article itself, and the overall radar is calculated from those article-level profiles. Scores do not represent article quality, journal rank, or scientific impact; they describe the relative thematic emphasis of each study on a 0–10 scale.
+</div>
+```
 
-### A-013 · Temporal revision of extreme-rainfall return levels under expanding observational records: limits of hydroclimatic transferability
+## Research profile
 
-**Journal:** *Theoretical and Applied Climatology*  
-**Editorial status:** Peer review
+**14 research articles · 4 published · 10 not published.**
 
-### A-014 · Partitioning Methodological Uncertainty in Indirect IDF Estimation from Daily Gridded Precipitation: Evidence from Torrential Catchments in Western Peru
 
-**Journal:** *RBRH – Revista Brasileira de Recursos Hídricos*  
-**Editorial status:** Under review (inferred; external review unconfirmed)
+```{r}
+#| fig-width: 8
+#| fig-height: 6.2
+#| fig-align: center
+#| out-width: "90%"
+#| fig-alt: "Radar chart summarizing the average thematic profile of the research portfolio across eight hydrology and water-resources domains."
 
-## Research themes
+library(fmsb)
 
-The portfolio spans hydrological modelling, rainfall and streamflow extremes, precipitation-product uncertainty, streamflow reconstruction, catchment similarity, hydroclimatic variability and statistical inference. The thematic radar is being revalidated for the expanded portfolio; no scores are shown here until all 14 manuscript profiles have been assessed consistently.
+mean_scores <- colMeans(scores)
 
-[Published papers and DOIs](publications.qmd)
+mean_radar_df <- as.data.frame(
+  rbind(
+    rep(10, ncol(scores)),
+    rep(0, ncol(scores)),
+    mean_scores
+  )
+)
+
+colnames(mean_radar_df) <- colnames(scores)
+rownames(mean_radar_df) <- c("Maximum", "Minimum", "Average")
+
+mean_color <- "#173F73"
+mean_fill <- adjustcolor(mean_color, alpha.f = 0.18)
+
+op <- par(
+  bg = "#f7f6f2",
+  mar = c(0.8, 0.8, 2.0, 0.8),
+  family = "sans"
+)
+
+invisible(
+  radarchart(
+    mean_radar_df,
+    axistype = 1,
+    pcol = mean_color,
+    pfcol = mean_fill,
+    plwd = 3,
+    plty = 1,
+    cglcol = "#d8d5cc",
+    cglty = 1,
+    cglwd = 0.8,
+    axislabcol = "#77736b",
+    caxislabels = c("", "2", "4", "6", "8", "10"),
+    calcex = 0.72,
+    vlcex = 0.82,
+    vlabels = radar_labels,
+    title = "Average Research Profile"
+  )
+)
+
+par(op)
+```
+
+The aggregate profile is the arithmetic mean of the 14 article-level profiles. It summarizes the research portfolio without assigning a separate score to a thematic block.
+
+## Articles and thematic profiles
+
+```{r}
+#| results: asis
+
+escape_html <- function(x) {
+  x <- gsub("&", "&amp;", x, fixed = TRUE)
+  x <- gsub("<", "&lt;", x, fixed = TRUE)
+  x <- gsub(">", "&gt;", x, fixed = TRUE)
+  x
+}
+
+cat('<div class="article-grid">')
+
+for (i in seq_len(nrow(articles))) {
+  doi_text <- if (articles$doi[i] == "") {
+    "DOI: -"
+  } else {
+    paste0(
+      'DOI: <a href="https://doi.org/',
+      articles$doi[i],
+      '" target="_blank">',
+      articles$doi[i],
+      "</a>"
+    )
+  }
+
+  article_scores <- as.numeric(unlist(articles[i, score_cols], use.names = FALSE))
+  top_idx <- order(article_scores, decreasing = TRUE)[seq_len(min(3, sum(article_scores > 0)))]
+  top_topics <- paste0(
+    '<span class="topic-chip">',
+    pillar_names[top_idx],
+    " · ",
+    article_scores[top_idx],
+    "/10</span>",
+    collapse = ""
+  )
+
+  profile_rows <- paste0(
+    '<div class="profile-row">',
+    '<div class="profile-label">', pillar_names, '</div>',
+    '<div class="profile-track"><div class="profile-fill" style="width:', article_scores * 10,
+    '%; background:', colors[i], ';"></div></div>',
+    '<div class="profile-score">', article_scores, '</div>',
+    '</div>',
+    collapse = ""
+  )
+
+  cat(
+    paste0(
+      '<div class="article-card" style="border-left-color:', colors[i], ';">',
+      '<div class="article-title">',
+      '<span class="article-code" style="background:', colors[i], ';">', articles$code[i], '</span>',
+      escape_html(articles$title[i]),
+      '</div>',
+      '<div class="article-meta">',
+      '<span class="badge">', articles$status[i], '</span>',
+      escape_html(articles$venue[i]),
+      ' · ',
+      doi_text,
+      '</div>',
+      '<div class="topics">Primary emphases: ', top_topics, '</div>',
+      '<div class="profile-grid">', profile_rows, '</div>',
+      '</div>'
+    )
+  )
+}
+
+cat('</div>')
+```
+
+## Interpretation
+
+The portfolio is concentrated in surface hydrology, hydrometeorology, statistical hydrology, uncertainty analysis, and hydroinformatics. Water-resources applications are present as a secondary dimension, while river hydraulics is peripheral in the current set of studies.
+
+Hydrogeology and water quality are absent from the represented articles. The radar therefore describes the actual thematic coverage of the portfolio rather than an intended or normative disciplinary profile.
+
+## How to read the scores
+
+The 0–10 values are article-level descriptors. A value close to 10 indicates that a domain is central to the study; intermediate values indicate a substantive but secondary role; values close to 0 indicate that the domain is peripheral or absent. The aggregate radar is calculated directly from these article-level values.

@@ -38,8 +38,8 @@ title: "Publications"
 
 [DOI: 10.1590/2318-0331.402620260025](https://doi.org/10.1590/2318-0331.402620260025)
 
-## Manuscripts in the editorial process
+## Research portfolio
 
-Ten additional active manuscripts are being evaluated or have been submitted to journals. They are not listed as publications and should not be confused with accepted or published work.
+The research portfolio includes 14 articles: four published and ten not published.
 
-See [Research Radar](research-radar.qmd) for manuscript titles, journal destinations and editorial status. Status information reflects the editorial tracker as of 1 November 2026.
+[Explore thematic research profiles](research-radar.qmd)
