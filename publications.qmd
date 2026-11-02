@@ -2,28 +2,44 @@
 title: "Publications"
 ---
 
-## 2026
+## Published peer-reviewed articles
 
-### Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru
+**4 published articles in 2026.** Journal names and DOIs are provided below.
 
-**Berrocal, B. F. & Ramirez, J. I.**
+### Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins
 
-*Ingeniería del Agua*
+**Ramirez, J., Velarde, L., & Berrocal, B.** (2026)
 
-DOI: [10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
+*South Sustainability*, 7(2), e174.
 
-### Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins
+[DOI: 10.21142/SS-0702-2026-e174](https://doi.org/10.21142/SS-0702-2026-e174) · [Article](https://revistas.cientifica.edu.pe/index.php/southsustainability/article/view/4029)
 
-**Berrocal, B. F. & Ramirez, J. I.**
+### Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura
 
-*Tecnología y Ciencias del Agua*
+**Berrocal, B. F., & Ramirez, J. I.** (2026)
 
-DOI: [10.24850/j-tyca-18-02-02](https://doi.org/10.24850/j-tyca-18-02-02)
+*Ingeniería del Agua*, 30(1), 48–62.
 
-### Bias-corrected precipitation products in a data-scarce Andean basin: performance and parameter transferability. 
+[DOI: 10.4995/ia.24476](https://doi.org/10.4995/ia.24476)
 
-**Berrocal, B. F. & Ramirez, J. I.** 
+### Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú
 
-*RBRH – Revista Brasileira de Recursos Hídricos*
+**Berrocal, B., & Ramirez, J.** (2026)
 
-DOI: [10.1590/2318-0331.402620260025](https://doi.org/10.1590/2318-0331.402620260025)
+*Tecnología y ciencias del agua*. Online first.
+
+[DOI: 10.24850/j-tyca-18-02-02](https://doi.org/10.24850/j-tyca-18-02-02)
+
+### Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability
+
+**Berrocal, B., & Ramirez, J.** (2026)
+
+*RBRH – Revista Brasileira de Recursos Hídricos*, 31, e40.
+
+[DOI: 10.1590/2318-0331.402620260025](https://doi.org/10.1590/2318-0331.402620260025)
+
+## Manuscripts in the editorial process
+
+Ten additional active manuscripts are being evaluated or have been submitted to journals. They are not listed as publications and should not be confused with accepted or published work.
+
+See [Research Radar](research-radar.qmd) for manuscript titles, journal destinations and editorial status. Status information reflects the editorial tracker as of 1 November 2026.
