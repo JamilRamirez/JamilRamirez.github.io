@@ -1,38 +1,80 @@
 [
   {
-    "objectID": "research-radar.html",
-    "href": "research-radar.html",
-    "title": "Research Radar",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
     "section": "",
-    "text": "Each article is the unit of analysis. Its thematic profile is stored with the article itself, and the overall radar is calculated from those article-level profiles. Scores do not represent article quality, journal rank, or scientific impact; they describe the relative thematic emphasis of each study on a 0–10 scale."
+    "text": "B.Sc. in Mechanical Fluids Engineering\nHydrology • Hydraulics • Water Resources\nI am a Peruvian researcher working in hydrology, hydraulics and environmental data science, with a focus on hydrological modelling, precipitation extremes, uncertainty and reproducible research.\n\n\n14 active articles · 4 published · 9 in review · 1 submitted\nThe portfolio covers hydrological prediction, extreme rainfall, satellite and gridded precipitation, hydroclimatic variability, uncertainty and regionalization. The count excludes one previously rejected manuscript (A-015), which remains in the private editorial history.\nExplore published articles · Research radar and editorial status\n\n\n\n\nFour peer-reviewed articles published in 2026 in Ingeniería del Agua, Tecnología y ciencias del agua, RBRH and South Sustainability.\nResearch under editorial evaluation at Hydrological Sciences Journal, Hydrological Processes, Water Resources Management, International Journal of Climatology, Theoretical and Applied Climatology, Water Science, RBRH and other journals.\nOpen hydrometeorological station-selection tools and reproducible research workflows available through GitHub and Zenodo.\n\n\n\n\nMy current work examines rainfall–runoff modelling, observational record limitations, high-flow evaluation, hydroclimatic transferability and uncertainty. I also develop open tools for hydrometeorological data screening and watershed analysis.\nResearch projects · Technical tools · Curriculum vitae"
   },
   {
-    "objectID": "research-radar.html#research-profile",
-    "href": "research-radar.html#research-profile",
-    "title": "Research Radar",
-    "section": "Research profile",
-    "text": "Research profile\n\n\n\n\n\n\n\n\n\nThe aggregate profile is the arithmetic mean of the 13 article-level profiles. It summarizes the research portfolio without assigning a separate score to a thematic block."
+    "objectID": "index.html#research-portfolio-november-2026",
+    "href": "index.html#research-portfolio-november-2026",
+    "title": "Home",
+    "section": "",
+    "text": "14 active articles · 4 published · 9 in review · 1 submitted\nThe portfolio covers hydrological prediction, extreme rainfall, satellite and gridded precipitation, hydroclimatic variability, uncertainty and regionalization. The count excludes one previously rejected manuscript (A-015), which remains in the private editorial history.\nExplore published articles · Research radar and editorial status"
   },
   {
-    "objectID": "research-radar.html#articles-and-thematic-profiles",
-    "href": "research-radar.html#articles-and-thematic-profiles",
-    "title": "Research Radar",
-    "section": "Articles and thematic profiles",
-    "text": "Articles and thematic profiles\n\n\n\nA-001Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura\n\n\nPublishedIngeniería del Agua · DOI: 10.4995/ia.24476\n\n\nPrimary emphases: Hydrometeorology · 9/10Remote sensing / Hydroinformatics · 9/10Surface hydrology · 8/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n8\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n9\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n4\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n8\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n9\n\n\n\n\n\n\nA-002Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú\n\n\nPublishedTecnología y ciencias del agua · DOI: 10.24850/j-tyca-18-02-02\n\n\nPrimary emphases: Surface hydrology · 9/10Statistical hydrology · 9/10Remote sensing / Hydroinformatics · 8/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n4\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n5\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n8\n\n\n\n\n\n\nA-003Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability\n\n\nPublishedRBRH - Revista Brasileira de Recursos Hídricos · DOI: 10.1590/2318-0331.402620260025\n\n\nPrimary emphases: Hydrometeorology · 9/10Remote sensing / Hydroinformatics · 9/10Statistical hydrology · 8/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n6\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n9\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n5\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n8\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n9\n\n\n\n\n\n\nA-004Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets\n\n\nUnder reviewRevista Facultad de Ingeniería Universidad de Antioquia · DOI: -\n\n\nPrimary emphases: Hydrometeorology · 9/10Statistical hydrology · 9/10Surface hydrology · 8/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n8\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n3\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n9\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n6\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n8\n\n\n\n\n\n\nA-005Effects of precipitation memory and state information on machine-learning streamflow modelling in two Andean basins\n\n\nMajor revisionHydrological Sciences Journal · DOI: -\n\n\nPrimary emphases: Surface hydrology · 9/10Hydrometeorology · 9/10Statistical hydrology · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n9\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n3\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n9\n\n\n\n\n\n\nA-006Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins\n\n\nUnder reviewWater Resources Management · DOI: -\n\n\nPrimary emphases: Surface hydrology · 9/10Water management · 9/10Statistical hydrology · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n3\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n9\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n6\n\n\n\n\n\n\nA-007When do regional hydrological constraints add predictive value without local streamflow?\n\n\nSubmittedHydrological Processes · DOI: -\n\n\nPrimary emphases: Surface hydrology · 10/10Statistical hydrology · 9/10Hydrometeorology · 7/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n7\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n5\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n7\n\n\n\n\n\n\nA-008Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins\n\n\nUnder reviewSouth Sustainability · DOI: -\n\n\nPrimary emphases: Hydrometeorology · 10/10Statistical hydrology · 9/10Remote sensing / Hydroinformatics · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n5\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n10\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n4\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n9\n\n\n\n\n\n\nA-009Hydroclimatic analogues-based envelopes of extreme discharge response to El Niño events along the Peruvian Pacific drainage\n\n\nSubmittedHydrological Processes · DOI: -\n\n\nPrimary emphases: Surface hydrology · 10/10Hydrometeorology · 10/10Statistical hydrology · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n10\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n5\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n8\n\n\n\n\n\n\nA-010Can climatic composition identify hydrological analogues? A national-scale test using contemporaneous streamflow records across Peru\n\n\nUnder reviewHydrological Sciences Journal · DOI: -\n\n\nPrimary emphases: Surface hydrology · 10/10Hydrometeorology · 9/10Statistical hydrology · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n9\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n4\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n8\n\n\n\n\n\n\nA-011From score sensitivity to comparative inference: evaluation-design effects on high-flow skill in released streamflow products\n\n\nSubmittedEnvironmental Modelling & Software · DOI: -\n\n\nPrimary emphases: Statistical hydrology · 10/10Remote sensing / Hydroinformatics · 10/10Surface hydrology · 9/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n1\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n4\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n3\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n10\n\n\n\n\n\n\nA-012Interpreting Record-Length Sensitivity in Stochastic Streamflow Modeling: Temporal Composition, Sampling Geometry, and Stationary Variability\n\n\nSubmittedJournal of Hydrologic Engineering · DOI: -\n\n\nPrimary emphases: Statistical hydrology · 10/10Surface hydrology · 9/10Water management · 6/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n9\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n3\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n6\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n5\n\n\n\n\n\n\nA-013Temporal revision of extreme-rainfall return levels under expanding observational records: limits of hydroclimatic transferability\n\n\nSubmittedTheoretical and Applied Climatology · DOI: -\n\n\nPrimary emphases: Hydrometeorology · 10/10Statistical hydrology · 10/10Surface hydrology · 5/10\n\n\n\n\nSurface hydrology\n\n\n\n\n\n\n\n5\n\n\n\n\nRiver hydraulics\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrogeology\n\n\n\n\n\n\n\n0\n\n\n\n\nHydrometeorology\n\n\n\n\n\n\n\n10\n\n\n\n\nWater quality\n\n\n\n\n\n\n\n0\n\n\n\n\nWater management\n\n\n\n\n\n\n\n4\n\n\n\n\nStatistical hydrology\n\n\n\n\n\n\n\n10\n\n\n\n\nRemote sensing / Hydroinformatics\n\n\n\n\n\n\n\n5"
+    "objectID": "index.html#recent-highlights",
+    "href": "index.html#recent-highlights",
+    "title": "Home",
+    "section": "",
+    "text": "Four peer-reviewed articles published in 2026 in Ingeniería del Agua, Tecnología y ciencias del agua, RBRH and South Sustainability.\nResearch under editorial evaluation at Hydrological Sciences Journal, Hydrological Processes, Water Resources Management, International Journal of Climatology, Theoretical and Applied Climatology, Water Science, RBRH and other journals.\nOpen hydrometeorological station-selection tools and reproducible research workflows available through GitHub and Zenodo."
   },
   {
-    "objectID": "research-radar.html#interpretation",
-    "href": "research-radar.html#interpretation",
-    "title": "Research Radar",
-    "section": "Interpretation",
-    "text": "Interpretation\nThe portfolio is concentrated in surface hydrology, hydrometeorology, statistical hydrology, uncertainty analysis, and hydroinformatics. Water-resources applications are present as a secondary dimension, while river hydraulics is peripheral in the current set of studies.\nHydrogeology and water quality are absent from the represented articles. The radar therefore describes the actual thematic coverage of the portfolio rather than an intended or normative disciplinary profile."
+    "objectID": "index.html#research-and-tools",
+    "href": "index.html#research-and-tools",
+    "title": "Home",
+    "section": "",
+    "text": "My current work examines rainfall–runoff modelling, observational record limitations, high-flow evaluation, hydroclimatic transferability and uncertainty. I also develop open tools for hydrometeorological data screening and watershed analysis.\nResearch projects · Technical tools · Curriculum vitae"
   },
   {
-    "objectID": "research-radar.html#how-to-read-the-scores",
-    "href": "research-radar.html#how-to-read-the-scores",
-    "title": "Research Radar",
-    "section": "How to read the scores",
-    "text": "How to read the scores\nThe 0–10 values are article-level descriptors. A value close to 10 indicates that a domain is central to the study; intermediate values indicate a substantive but secondary role; values close to 0 indicate that the domain is peripheral or absent. The aggregate radar is calculated directly from these article-level values."
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Technical Notes",
+    "section": "",
+    "text": "This section contains technical notes, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science."
+  },
+  {
+    "objectID": "blog.html#tools",
+    "href": "blog.html#tools",
+    "title": "Technical Notes",
+    "section": "Tools",
+    "text": "Tools\n\nAutomated IDF Report Generator in R\nAn open-source workflow for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.\nThe toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.\n\nFeatures\n\nFrequency analysis of annual maximum precipitation\nDesign rainfall estimation for multiple return periods\nIDF curve generation\nAutomatic PDF report creation\nReport output in Spanish\n\n\n\nDownload\nDownload IDF Toolkit (ZIP)\n\n\n\nANA Hydrometeorological Station Auditor\nA reproducible workflow for auditing the national hydrometeorological station inventory of the Peruvian National Water Authority (ANA).\nThe tool is designed to explore hydrometric and pluviometric stations across Peruvian basins and evaluate the temporal availability and completeness of their observational records.\n\nFeatures\n\nBasin-by-basin exploration of ANA stations\nHydrometric and pluviometric station inventories\nIdentification of first and last available observations\nRecord completeness assessment\nEvaluation of common observational periods\nDetection of missing-data patterns and long data gaps\nSupport for screening stations for hydrological research\n\nThe project is intended to provide a transparent first-stage audit before downloading and processing large observational datasets.\n\n\n\nFABDEM Catchment Delineator v1.2\nA reproducible catchment delineation workflow based on the 30 m FABDEM digital elevation model.\nThe tool is designed to generate watershed boundaries from user-defined outlet locations while handling the underlying DEM coverage and preprocessing required for hydrological terrain analysis.\n\nFeatures\n\nCatchment delineation from outlet points\nFABDEM 30 m terrain data\nAutomated DEM tile identification\nProcessing of multi-tile catchments\nHydrologically consistent terrain preprocessing\nSupport for Peruvian and transboundary basins\nReproducible GIS outputs for subsequent hydrological analysis"
+  },
+  {
+    "objectID": "blog.html#reproducible-research",
+    "href": "blog.html#reproducible-research",
+    "title": "Technical Notes",
+    "section": "Reproducible Research",
+    "text": "Reproducible Research\nCode, datasets, supplementary material and reproducibility packages associated with my research and technical developments are also archived on Zenodo.\nBrowse my Zenodo records"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.\nMy research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.\nMy current research explores rainfall–runoff modelling, satellite and gridded precipitation products, extreme event analysis, and the application of statistical and machine learning methods in hydrology.\nThis website serves as a repository of publications, research projects, technical notes and reproducible workflows developed using R, GIS tools and open hydrological datasets."
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nHydrology and Water Resources\nHydrological Modelling\nHydrological Frequency Analysis\nExtreme Rainfall and Flood Analysis\nSatellite and Gridded Precipitation Products\nHydrological Uncertainty Assessment\nMachine Learning Applications in Hydrology\nEnvironmental Data Science\nReproducible Research with R and Quarto"
+  },
+  {
+    "objectID": "about.html#academic-profiles",
+    "href": "about.html#academic-profiles",
+    "title": "About",
+    "section": "Academic Profiles",
+    "text": "Academic Profiles\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez\nZenodo: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Ramirez%20Mu%C3%B1oz%2C%20Jamil%20Isaac%22&l=list&p=1&s=10&sort=bestmatch"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.\nEmail: jamil_ramirez.m@hotmail.com"
   },
   {
     "objectID": "projects.html",
@@ -119,87 +161,52 @@
     "text": "GitHub: https://github.com/JamilRamirez\nLinkedIn: https://www.linkedin.com/in/jamil-r-762098b1/"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I hold a B.Sc. in Mechanical Fluids Engineering and work in hydrology, hydraulics and water resources analysis.\nMy research focuses on hydrological modelling, precipitation analysis, uncertainty assessment and environmental data science. I am particularly interested in understanding how data limitations, modelling choices and methodological assumptions influence hydrological predictions and decision-making in data-scarce environments.\nMy current research explores rainfall–runoff modelling, satellite and gridded precipitation products, extreme event analysis, and the application of statistical and machine learning methods in hydrology.\nThis website serves as a repository of publications, research projects, technical notes and reproducible workflows developed using R, GIS tools and open hydrological datasets."
-  },
-  {
-    "objectID": "about.html#research-interests",
-    "href": "about.html#research-interests",
-    "title": "About",
-    "section": "Research Interests",
-    "text": "Research Interests\n\nHydrology and Water Resources\nHydrological Modelling\nHydrological Frequency Analysis\nExtreme Rainfall and Flood Analysis\nSatellite and Gridded Precipitation Products\nHydrological Uncertainty Assessment\nMachine Learning Applications in Hydrology\nEnvironmental Data Science\nReproducible Research with R and Quarto"
-  },
-  {
-    "objectID": "about.html#academic-profiles",
-    "href": "about.html#academic-profiles",
-    "title": "About",
-    "section": "Academic Profiles",
-    "text": "Academic Profiles\n\nORCID: https://orcid.org/0009-0009-3386-8571\nGoogle Scholar: https://scholar.google.com/citations?user=W69TP6QAAAAJ\nResearchGate: https://www.researchgate.net/profile/Jamil-Ramirez\nZenodo: https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Ramirez%20Mu%C3%B1oz%2C%20Jamil%20Isaac%22&l=list&p=1&s=10&sort=bestmatch"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nFor research collaborations, academic inquiries or professional opportunities, feel free to connect through the professional profiles listed above.\nEmail: jamil_ramirez.m@hotmail.com"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Technical Notes",
-    "section": "",
-    "text": "This section contains technical notes, reproducible workflows and open-source tools related to hydrology, hydraulics and environmental data science."
-  },
-  {
-    "objectID": "blog.html#tools",
-    "href": "blog.html#tools",
-    "title": "Technical Notes",
-    "section": "Tools",
-    "text": "Tools\n\nAutomated IDF Report Generator in R\nAn open-source workflow for automated frequency analysis of annual maximum precipitation series and generation of Intensity–Duration–Frequency (IDF) reports.\nThe toolkit includes an R script, an R Markdown template, example files and documentation required to generate station-based IDF reports automatically.\n\nFeatures\n\nFrequency analysis of annual maximum precipitation\nDesign rainfall estimation for multiple return periods\nIDF curve generation\nAutomatic PDF report creation\nReport output in Spanish\n\n\n\nDownload\nDownload IDF Toolkit (ZIP)\n\n\n\nANA Hydrometeorological Station Auditor\nA reproducible workflow for auditing the national hydrometeorological station inventory of the Peruvian National Water Authority (ANA).\nThe tool is designed to explore hydrometric and pluviometric stations across Peruvian basins and evaluate the temporal availability and completeness of their observational records.\n\nFeatures\n\nBasin-by-basin exploration of ANA stations\nHydrometric and pluviometric station inventories\nIdentification of first and last available observations\nRecord completeness assessment\nEvaluation of common observational periods\nDetection of missing-data patterns and long data gaps\nSupport for screening stations for hydrological research\n\nThe project is intended to provide a transparent first-stage audit before downloading and processing large observational datasets.\n\n\n\nFABDEM Catchment Delineator v1.2\nA reproducible catchment delineation workflow based on the 30 m FABDEM digital elevation model.\nThe tool is designed to generate watershed boundaries from user-defined outlet locations while handling the underlying DEM coverage and preprocessing required for hydrological terrain analysis.\n\nFeatures\n\nCatchment delineation from outlet points\nFABDEM 30 m terrain data\nAutomated DEM tile identification\nProcessing of multi-tile catchments\nHydrologically consistent terrain preprocessing\nSupport for Peruvian and transboundary basins\nReproducible GIS outputs for subsequent hydrological analysis"
-  },
-  {
-    "objectID": "blog.html#reproducible-research",
-    "href": "blog.html#reproducible-research",
-    "title": "Technical Notes",
-    "section": "Reproducible Research",
-    "text": "Reproducible Research\nCode, datasets, supplementary material and reproducibility packages associated with my research and technical developments are also archived on Zenodo.\nBrowse my Zenodo records"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
-    "section": "",
-    "text": "B.Sc. in Mechanical Fluids Engineering\nHydrology • Hydraulics • Water Resources\nI am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.\nThis website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.\n\n\n\n\nDevelopment of Bayesian approaches for hydrological prediction using rolling observational windows, hydroclimatic predictors and temporal information to evaluate how changing data availability influences predictive uncertainty and model performance.\n\n\n\n\n\nPublished research on bias correction and frequency analysis of satellite precipitation in the Piura River Basin.\nPublished comparative research on traditional and machine learning methods for daily streamflow infilling in representative Peruvian basins.\nPublished research on bias-corrected precipitation products and parameter transferability in a data-scarce Andean basin.\nOngoing research on rainfall–runoff modelling and hydrological uncertainty in the Cañete River Basin.\nOngoing research on Bayesian hydrological prediction using rolling observational windows and hydroclimatic information."
-  },
-  {
-    "objectID": "index.html#current-research",
-    "href": "index.html#current-research",
-    "title": "Home",
-    "section": "",
-    "text": "Development of Bayesian approaches for hydrological prediction using rolling observational windows, hydroclimatic predictors and temporal information to evaluate how changing data availability influences predictive uncertainty and model performance."
-  },
-  {
-    "objectID": "index.html#recent-highlights",
-    "href": "index.html#recent-highlights",
-    "title": "Home",
-    "section": "",
-    "text": "Published research on bias correction and frequency analysis of satellite precipitation in the Piura River Basin.\nPublished comparative research on traditional and machine learning methods for daily streamflow infilling in representative Peruvian basins.\nPublished research on bias-corrected precipitation products and parameter transferability in a data-scarce Andean basin.\nOngoing research on rainfall–runoff modelling and hydrological uncertainty in the Cañete River Basin.\nOngoing research on Bayesian hydrological prediction using rolling observational windows and hydroclimatic information."
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Berrocal, B. F. & Ramirez, J. I.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nBerrocal, B. F. & Ramirez, J. I.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02\n\n\n\nBerrocal, B. F. & Ramirez, J. I.\nRBRH – Revista Brasileira de Recursos Hídricos\nDOI: 10.1590/2318-0331.402620260025"
+    "text": "4 published articles in 2026. Journal names and DOIs are provided below.\n\n\nRamirez, J., Velarde, L., & Berrocal, B. (2026)\nSouth Sustainability, 7(2), e174.\nDOI: 10.21142/SS-0702-2026-e174 · Article\n\n\n\nBerrocal, B. F., & Ramirez, J. I. (2026)\nIngeniería del Agua, 30(1), 48–62.\nDOI: 10.4995/ia.24476\n\n\n\nBerrocal, B., & Ramirez, J. (2026)\nTecnología y ciencias del agua. Online first.\nDOI: 10.24850/j-tyca-18-02-02\n\n\n\nBerrocal, B., & Ramirez, J. (2026)\nRBRH – Revista Brasileira de Recursos Hídricos, 31, e40.\nDOI: 10.1590/2318-0331.402620260025"
   },
   {
-    "objectID": "publications.html#section",
-    "href": "publications.html#section",
+    "objectID": "publications.html#published-peer-reviewed-articles",
+    "href": "publications.html#published-peer-reviewed-articles",
     "title": "Publications",
     "section": "",
-    "text": "Berrocal, B. F. & Ramirez, J. I.\nIngeniería del Agua\nDOI: 10.4995/ia.24476\n\n\n\nBerrocal, B. F. & Ramirez, J. I.\nTecnología y Ciencias del Agua\nDOI: 10.24850/j-tyca-18-02-02\n\n\n\nBerrocal, B. F. & Ramirez, J. I.\nRBRH – Revista Brasileira de Recursos Hídricos\nDOI: 10.1590/2318-0331.402620260025"
+    "text": "4 published articles in 2026. Journal names and DOIs are provided below.\n\n\nRamirez, J., Velarde, L., & Berrocal, B. (2026)\nSouth Sustainability, 7(2), e174.\nDOI: 10.21142/SS-0702-2026-e174 · Article\n\n\n\nBerrocal, B. F., & Ramirez, J. I. (2026)\nIngeniería del Agua, 30(1), 48–62.\nDOI: 10.4995/ia.24476\n\n\n\nBerrocal, B., & Ramirez, J. (2026)\nTecnología y ciencias del agua. Online first.\nDOI: 10.24850/j-tyca-18-02-02\n\n\n\nBerrocal, B., & Ramirez, J. (2026)\nRBRH – Revista Brasileira de Recursos Hídricos, 31, e40.\nDOI: 10.1590/2318-0331.402620260025"
+  },
+  {
+    "objectID": "publications.html#manuscripts-in-the-editorial-process",
+    "href": "publications.html#manuscripts-in-the-editorial-process",
+    "title": "Publications",
+    "section": "Manuscripts in the editorial process",
+    "text": "Manuscripts in the editorial process\nTen additional active manuscripts are being evaluated or have been submitted to journals. They are not listed as publications and should not be confused with accepted or published work.\nSee Research Radar for manuscript titles, journal destinations and editorial status. Status information reflects the editorial tracker as of 1 November 2026."
+  },
+  {
+    "objectID": "research-radar.html",
+    "href": "research-radar.html",
+    "title": "Research Radar",
+    "section": "",
+    "text": "14 active articles · 4 published · 9 in review · 1 submitted\nEditorial statuses are reported as recorded on 1 November 2026. Under review does not necessarily mean that external referees have been assigned. The rejected A-015 manuscript is not included in the active portfolio."
+  },
+  {
+    "objectID": "research-radar.html#research-portfolio",
+    "href": "research-radar.html#research-portfolio",
+    "title": "Research Radar",
+    "section": "",
+    "text": "14 active articles · 4 published · 9 in review · 1 submitted\nEditorial statuses are reported as recorded on 1 November 2026. Under review does not necessarily mean that external referees have been assigned. The rejected A-015 manuscript is not included in the active portfolio."
+  },
+  {
+    "objectID": "research-radar.html#articles-and-journal-destinations",
+    "href": "research-radar.html#articles-and-journal-destinations",
+    "title": "Research Radar",
+    "section": "Articles and journal destinations",
+    "text": "Articles and journal destinations\n\nA-001 · Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura\nJournal: Ingeniería del Agua\nEditorial status: Published\n\n\nA-002 · Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú\nJournal: Tecnología y ciencias del agua\nEditorial status: Published\n\n\nA-003 · Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability\nJournal: RBRH – Revista Brasileira de Recursos Hídricos\nEditorial status: Published\n\n\nA-004 · Uncertainty in Indirect IDF Estimation Using Open Precipitation Datasets\nJournal: Revista Facultad de Ingeniería Universidad de Antioquia\nEditorial status: Editorial assessment; external review unconfirmed\n\n\nA-005 · Effects of precipitation memory and state information on machine-learning streamflow modelling in two Andean basins\nJournal: Hydrological Sciences Journal\nEditorial status: R2 submitted; decision pending\n\n\nA-006 · Does daily performance guarantee annual reliability? Uncertainty propagation from gap-filled streamflow records into water balance estimation in data-scarce basins\nJournal: Water Resources Management\nEditorial status: Under review\n\n\nA-007 · When do regional hydrological constraints add predictive value without local streamflow?\nJournal: Hydrological Processes\nEditorial status: Under review\n\n\nA-008 · Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins\nJournal: South Sustainability\nEditorial status: Published\n\n\nA-009 · Hydroclimatic non-equivalence among major El Niño events along the Peruvian Pacific drainage: implications for historical-analogue transferability\nJournal: International Journal of Climatology\nEditorial status: Under review\n\n\nA-010 · Do persistent climatic patterns along flow paths improve prediction of streamflow-regime differences?\nJournal: Hydrological Sciences Journal\nEditorial status: Submitted; external review unconfirmed\n\n\nA-011 · Robustness of Comparative High-Flow Performance Across Global Streamflow Products\nJournal: Water Science\nEditorial status: Revision submitted; decision pending\n\n\nA-012 · Dry-season flow retention across contrasting climatic regimes in Chilean catchments\nJournal: South Sustainability\nEditorial status: Sent for peer review; reviewers not confirmed\n\n\nA-013 · Temporal revision of extreme-rainfall return levels under expanding observational records: limits of hydroclimatic transferability\nJournal: Theoretical and Applied Climatology\nEditorial status: Peer review\n\n\nA-014 · Partitioning Methodological Uncertainty in Indirect IDF Estimation from Daily Gridded Precipitation: Evidence from Torrential Catchments in Western Peru\nJournal: RBRH – Revista Brasileira de Recursos Hídricos\nEditorial status: Under review (inferred; external review unconfirmed)"
+  },
+  {
+    "objectID": "research-radar.html#research-themes",
+    "href": "research-radar.html#research-themes",
+    "title": "Research Radar",
+    "section": "Research themes",
+    "text": "Research themes\nThe portfolio spans hydrological modelling, rainfall and streamflow extremes, precipitation-product uncertainty, streamflow reconstruction, catchment similarity, hydroclimatic variability and statistical inference. The thematic radar is being revalidated for the expanded portfolio; no scores are shown here until all 14 manuscript profiles have been assessed consistently.\nPublished papers and DOIs"
   }
 ]

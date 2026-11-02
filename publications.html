@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5257a5da419ade4c0db3d03e77f7b0ef.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0b5be16300944f5ea344f134f2399378.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,12 +139,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2026</a>
+  <li><a href="#published-peer-reviewed-articles" id="toc-published-peer-reviewed-articles" class="nav-link active" data-scroll-target="#published-peer-reviewed-articles">Published peer-reviewed articles</a>
   <ul class="collapse">
-  <li><a href="#bias-correction-and-statistical-transfer-of-satellite-annual-maximum-precipitation-series-in-the-piura-river-basin-peru" id="toc-bias-correction-and-statistical-transfer-of-satellite-annual-maximum-precipitation-series-in-the-piura-river-basin-peru" class="nav-link" data-scroll-target="#bias-correction-and-statistical-transfer-of-satellite-annual-maximum-precipitation-series-in-the-piura-river-basin-peru">Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru</a></li>
-  <li><a href="#comparative-analysis-of-traditional-models-and-machine-learning-for-daily-streamflow-infilling-in-representative-peruvian-basins" id="toc-comparative-analysis-of-traditional-models-and-machine-learning-for-daily-streamflow-infilling-in-representative-peruvian-basins" class="nav-link" data-scroll-target="#comparative-analysis-of-traditional-models-and-machine-learning-for-daily-streamflow-infilling-in-representative-peruvian-basins">Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins</a></li>
-  <li><a href="#bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability." id="toc-bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability." class="nav-link" data-scroll-target="#bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability.">Bias-corrected precipitation products in a data-scarce Andean basin: performance and parameter transferability.</a></li>
+  <li><a href="#wetdry-hydroclimatic-pressure-and-thermal-intensification-in-contrasting-peruvian-basins" id="toc-wetdry-hydroclimatic-pressure-and-thermal-intensification-in-contrasting-peruvian-basins" class="nav-link" data-scroll-target="#wetdry-hydroclimatic-pressure-and-thermal-intensification-in-contrasting-peruvian-basins">Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins</a></li>
+  <li><a href="#corrección-de-sesgo-y-transferencia-estadística-en-series-de-precipitación-máxima-anual-satelital-en-el-río-piura" id="toc-corrección-de-sesgo-y-transferencia-estadística-en-series-de-precipitación-máxima-anual-satelital-en-el-río-piura" class="nav-link" data-scroll-target="#corrección-de-sesgo-y-transferencia-estadística-en-series-de-precipitación-máxima-anual-satelital-en-el-río-piura">Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura</a></li>
+  <li><a href="#comparativa-de-modelos-tradicionales-vs-machine-learning-para-el-relleno-de-datos-faltantes-en-series-de-caudales-diarios-en-cuencas-representativas-del-perú" id="toc-comparativa-de-modelos-tradicionales-vs-machine-learning-para-el-relleno-de-datos-faltantes-en-series-de-caudales-diarios-en-cuencas-representativas-del-perú" class="nav-link" data-scroll-target="#comparativa-de-modelos-tradicionales-vs-machine-learning-para-el-relleno-de-datos-faltantes-en-series-de-caudales-diarios-en-cuencas-representativas-del-perú">Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú</a></li>
+  <li><a href="#bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability" id="toc-bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability" class="nav-link" data-scroll-target="#bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability">Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability</a></li>
   </ul></li>
+  <li><a href="#manuscripts-in-the-editorial-process" id="toc-manuscripts-in-the-editorial-process" class="nav-link" data-scroll-target="#manuscripts-in-the-editorial-process">Manuscripts in the editorial process</a></li>
   </ul>
 </nav>
     </div>
@@ -167,28 +172,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2026</h2>
-<section id="bias-correction-and-statistical-transfer-of-satellite-annual-maximum-precipitation-series-in-the-piura-river-basin-peru" class="level3">
-<h3 class="anchored" data-anchor-id="bias-correction-and-statistical-transfer-of-satellite-annual-maximum-precipitation-series-in-the-piura-river-basin-peru">Bias Correction and Statistical Transfer of Satellite Annual Maximum Precipitation Series in the Piura River Basin, Peru</h3>
-<p><strong>Berrocal, B. F. &amp; Ramirez, J. I.</strong></p>
-<p><em>Ingeniería del Agua</em></p>
-<p>DOI: <a href="https://doi.org/10.4995/ia.24476">10.4995/ia.24476</a></p>
+<section id="published-peer-reviewed-articles" class="level2">
+<h2 class="anchored" data-anchor-id="published-peer-reviewed-articles">Published peer-reviewed articles</h2>
+<p><strong>4 published articles in 2026.</strong> Journal names and DOIs are provided below.</p>
+<section id="wetdry-hydroclimatic-pressure-and-thermal-intensification-in-contrasting-peruvian-basins" class="level3">
+<h3 class="anchored" data-anchor-id="wetdry-hydroclimatic-pressure-and-thermal-intensification-in-contrasting-peruvian-basins">Wet–dry hydroclimatic pressure and thermal intensification in contrasting Peruvian basins</h3>
+<p><strong>Ramirez, J., Velarde, L., &amp; Berrocal, B.</strong> (2026)</p>
+<p><em>South Sustainability</em>, 7(2), e174.</p>
+<p><a href="https://doi.org/10.21142/SS-0702-2026-e174">DOI: 10.21142/SS-0702-2026-e174</a> · <a href="https://revistas.cientifica.edu.pe/index.php/southsustainability/article/view/4029">Article</a></p>
 </section>
-<section id="comparative-analysis-of-traditional-models-and-machine-learning-for-daily-streamflow-infilling-in-representative-peruvian-basins" class="level3">
-<h3 class="anchored" data-anchor-id="comparative-analysis-of-traditional-models-and-machine-learning-for-daily-streamflow-infilling-in-representative-peruvian-basins">Comparative Analysis of Traditional Models and Machine Learning for Daily Streamflow Infilling in Representative Peruvian Basins</h3>
-<p><strong>Berrocal, B. F. &amp; Ramirez, J. I.</strong></p>
-<p><em>Tecnología y Ciencias del Agua</em></p>
-<p>DOI: <a href="https://doi.org/10.24850/j-tyca-18-02-02">10.24850/j-tyca-18-02-02</a></p>
+<section id="corrección-de-sesgo-y-transferencia-estadística-en-series-de-precipitación-máxima-anual-satelital-en-el-río-piura" class="level3">
+<h3 class="anchored" data-anchor-id="corrección-de-sesgo-y-transferencia-estadística-en-series-de-precipitación-máxima-anual-satelital-en-el-río-piura">Corrección de sesgo y transferencia estadística en series de precipitación máxima anual satelital en el río Piura</h3>
+<p><strong>Berrocal, B. F., &amp; Ramirez, J. I.</strong> (2026)</p>
+<p><em>Ingeniería del Agua</em>, 30(1), 48–62.</p>
+<p><a href="https://doi.org/10.4995/ia.24476">DOI: 10.4995/ia.24476</a></p>
 </section>
-<section id="bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability." class="level3">
-<h3 class="anchored" data-anchor-id="bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability.">Bias-corrected precipitation products in a data-scarce Andean basin: performance and parameter transferability.</h3>
-<p><strong>Berrocal, B. F. &amp; Ramirez, J. I.</strong></p>
-<p><em>RBRH – Revista Brasileira de Recursos Hídricos</em></p>
-<p>DOI: <a href="https://doi.org/10.1590/2318-0331.402620260025">10.1590/2318-0331.402620260025</a></p>
+<section id="comparativa-de-modelos-tradicionales-vs-machine-learning-para-el-relleno-de-datos-faltantes-en-series-de-caudales-diarios-en-cuencas-representativas-del-perú" class="level3">
+<h3 class="anchored" data-anchor-id="comparativa-de-modelos-tradicionales-vs-machine-learning-para-el-relleno-de-datos-faltantes-en-series-de-caudales-diarios-en-cuencas-representativas-del-perú">Comparativa de modelos tradicionales vs machine learning para el relleno de datos faltantes en series de caudales diarios en cuencas representativas del Perú</h3>
+<p><strong>Berrocal, B., &amp; Ramirez, J.</strong> (2026)</p>
+<p><em>Tecnología y ciencias del agua</em>. Online first.</p>
+<p><a href="https://doi.org/10.24850/j-tyca-18-02-02">DOI: 10.24850/j-tyca-18-02-02</a></p>
+</section>
+<section id="bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability" class="level3">
+<h3 class="anchored" data-anchor-id="bias-corrected-precipitation-products-in-a-data-scarce-andean-basin-performance-and-parameter-transferability">Bias-Corrected Precipitation Products in a Data-Scarce Andean Basin: Performance and Parameter Transferability</h3>
+<p><strong>Berrocal, B., &amp; Ramirez, J.</strong> (2026)</p>
+<p><em>RBRH – Revista Brasileira de Recursos Hídricos</em>, 31, e40.</p>
+<p><a href="https://doi.org/10.1590/2318-0331.402620260025">DOI: 10.1590/2318-0331.402620260025</a></p>
+</section>
+</section>
+<section id="manuscripts-in-the-editorial-process" class="level2">
+<h2 class="anchored" data-anchor-id="manuscripts-in-the-editorial-process">Manuscripts in the editorial process</h2>
+<p>Ten additional active manuscripts are being evaluated or have been submitted to journals. They are not listed as publications and should not be confused with accepted or published work.</p>
+<p>See <a href="./research-radar.html">Research Radar</a> for manuscript titles, journal destinations and editorial status. Status information reflects the editorial tracker as of 1 November 2026.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -593,6 +610,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Jamil Ramirez. Content and code subject to their respective licenses.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
