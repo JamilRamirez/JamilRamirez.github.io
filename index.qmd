@@ -8,20 +8,24 @@ title: "Home"
 
 Hydrology • Hydraulics • Water Resources
 
-I am a Peruvian researcher and practitioner working in hydrology, hydraulics and environmental data science. My interests include hydrological modelling, precipitation analysis, uncertainty assessment, extreme events and data-driven approaches for water resources applications.
+I am a Peruvian researcher working in hydrology, hydraulics and environmental data science, with a focus on hydrological modelling, precipitation extremes, uncertainty and reproducible research.
 
-This website provides access to my publications, research projects, technical notes and reproducible workflows developed using open datasets, R and Quarto.
+## Research portfolio · November 2026
 
-## Current Research
+**14 active articles · 4 published · 9 in review · 1 submitted**
 
-### Bayesian Hydrology
+The portfolio covers hydrological prediction, extreme rainfall, satellite and gridded precipitation, hydroclimatic variability, uncertainty and regionalization. The count excludes one previously rejected manuscript (A-015), which remains in the private editorial history.
 
-Development of Bayesian approaches for hydrological prediction using rolling observational windows, hydroclimatic predictors and temporal information to evaluate how changing data availability influences predictive uncertainty and model performance.
+[Explore published articles](publications.qmd) · [Research radar and editorial status](research-radar.qmd)
 
-## Recent Highlights
+## Recent highlights
 
-- Published research on bias correction and frequency analysis of satellite precipitation in the Piura River Basin.
-- Published comparative research on traditional and machine learning methods for daily streamflow infilling in representative Peruvian basins.
-- Published research on bias-corrected precipitation products and parameter transferability in a data-scarce Andean basin.
-- Ongoing research on rainfall–runoff modelling and hydrological uncertainty in the Cañete River Basin.
-- Ongoing research on Bayesian hydrological prediction using rolling observational windows and hydroclimatic information.
+- Four peer-reviewed articles published in 2026 in *Ingeniería del Agua*, *Tecnología y ciencias del agua*, *RBRH* and *South Sustainability*.
+- Research under editorial evaluation at *Hydrological Sciences Journal*, *Hydrological Processes*, *Water Resources Management*, *International Journal of Climatology*, *Theoretical and Applied Climatology*, *Water Science*, *RBRH* and other journals.
+- Open hydrometeorological station-selection tools and reproducible research workflows available through GitHub and Zenodo.
+
+## Research and tools
+
+My current work examines rainfall–runoff modelling, observational record limitations, high-flow evaluation, hydroclimatic transferability and uncertainty. I also develop open tools for hydrometeorological data screening and watershed analysis.
+
+[Research projects](projects.qmd) · [Technical tools](blog.qmd) · [Curriculum vitae](CV.qmd)
